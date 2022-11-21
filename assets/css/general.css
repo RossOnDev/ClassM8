@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto&display=swap');
 
 
 :root {
@@ -9,15 +9,25 @@
     --analougus-dark: #0fb359;
     --triadic-light: #0fb3ab;
     --triadic--dark: #0f18b3;
+
+    --roboto: 'Roboto', sans-serif;
+    --bebas-neue: 'Bebas neue', cursive;
 }
 
 body {
     margin: 0;
     background: var(--dark-grey);
+    font-family: var(--roboto);
+    color: white;
 }
 
-a, p, h1, h2, h3, h4, h5, h6 {
-    font-family: Roboto, sans-serif;
-    color: white;
-    margin: .3rem;
+p {
+    margin: 0;
+}
+
+ h1, h2, h3, h4, h5, h6 {
+     font-family: var(--bebas-neue);
+     letter-spacing: 1px;
+     font-weight: 300;
+     margin: 0;
 }
