@@ -1,0 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+
+:root {
+    --dark-grey: #121212;
+}
+
+body {
+    margin: 0;
+    background: var(--dark-grey);
+}
+
+a, p, h1, h2, h3, h4, h5, h6 {
+    font-family: Roboto, sans-serif;
+    color: white;
+    margin: .3rem;
+}
+
+.card {
+    margin: 20% auto;
+    background: rgba(255, 255, 255, 0.05);
+    width: 10vw;
+    height: auto;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    padding: 0.5rem;
+}
