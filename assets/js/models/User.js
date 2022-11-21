@@ -3,5 +3,7 @@ export default class User {
         this.firstName = firstName;
         this.lastName = lastName;
         this.skills = skills;
+        this.email = email;
+        this.profilePic = profilePic;
     }
 }
