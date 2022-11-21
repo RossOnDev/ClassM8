@@ -3,6 +3,12 @@
 
 :root {
     --dark-grey: #121212;
+    --primary-color: #18b30f;
+    --secondary-color: #ab0fb3;
+    --analogous-light: #69b30f;
+    --analougus-dark: #0fb359;
+    --triadic-light: #0fb3ab;
+    --triadic--dark: #0f18b3;
 }
 
 body {
@@ -14,15 +20,4 @@ a, p, h1, h2, h3, h4, h5, h6 {
     font-family: Roboto, sans-serif;
     color: white;
     margin: .3rem;
-}
-
-.card {
-    margin: 20% auto;
-    background: rgba(255, 255, 255, 0.05);
-    width: 10vw;
-    height: auto;
-    border-radius: 10px;
-    display: flex;
-    flex-direction: column;
-    padding: 0.5rem;
 }
