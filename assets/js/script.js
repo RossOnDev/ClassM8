@@ -1,27 +1,9 @@
-import User from "./models/User.js";
+import DataGenerator from "./utils/DataGenerator.js";
 
-const users = [];
+const dataGenerator = new DataGenerator();
 
-const user = new User("Patrick", "Rössler", ["Informatik", "Datenbankdesign", "Softwareentwicklung"]);
-const user2 = new User("Alexander", "Steiner", ["Linux", "Mathematik"]);
-const user3 = new User("Alexander", "Steiner", ["Informatik", "Linux", "Datenbankdesign"]);
-
-users.push(user);
-users.push(user2);
-users.push(user3);
-
-function getSkillsListFromUsers(users) {
-    const skills = new Set();
-
-    users.forEach(user => {
-        user.skills.forEach(skill => skills.add(skill))
-    })
-
-    return skills;
-}
-
-
-const skills = getSkillsListFromUsers(users);
+const users = dataGenerator.getUsers();
+const skills = dataGenerator.getSkillsListFromUsers(users);
 
 let skillHTML = "";
 skills.forEach(skill => {
@@ -33,3 +15,22 @@ skills.forEach(skill => {
 })
 
 document.getElementById("skills").innerHTML = skillHTML;
+
+let cardsHTML = "";
+users.forEach(user => {
+    const fullName = user.firstName + " " + user.lastName;
+    const profileUrl = "./profiles/" + user.firstName.toLowerCase() + "_" + user.lastName.toLowerCase() + ".html";
+
+    cardsHTML += "<div class=\"card\" onclick=\"window.location = '" + profileUrl + "'\">\n" +
+        "                    <img src=\"assets/img/avatars/avatar.jpg\" alt='Image of "+ fullName +"'>\n" +
+        "                    <div class=\"card-desc\">\n" +
+        "                        <h6>" + fullName +"</h6>\n" +
+        "                        <div class=\"skill-list\">\n";
+
+    user.skills.forEach(skill => {
+        cardsHTML += ("<a>" + skill + "</a>")
+    })
+
+    cardsHTML += "</div></div></div>";
+})
+document.getElementById("cards").innerHTML = cardsHTML;
