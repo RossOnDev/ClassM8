@@ -4,6 +4,8 @@
 :root {
     --dark-grey: #121212;
     --primary-color: #18b30f;
+    --primary-color-focused: rgba(24, 179, 15, 0.12);
+    --primary-color-hovered: rgba(24, 179, 15, 0.04);
     --secondary-color: #ab0fb3;
     --analogous-light: #69b30f;
     --analougus-dark: #0fb359;
