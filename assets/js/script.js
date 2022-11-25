@@ -1,54 +1,45 @@
-import DataGenerator from "./utils/DataGenerator.js";
+let users;
 
-const dataGenerator = new DataGenerator();
+(async () => {
+    const DataGenerator = await import("./utils/DataGenerator.js");
+    const RenderModule = await import("./utils/RenderModule.js");
 
-const users = dataGenerator.getUsers();
-const skills = dataGenerator.getSkillsListFromUsers(users);
+    const dataGenerator = new DataGenerator.default;
+    const renderModule = new RenderModule.default;
 
-renderSkills(skills);
-renderCards(users);
-getSelectedSkills();
+    users = dataGenerator.getUsers();
+    const skills = dataGenerator.getSkillsListFromUsers(users);
 
-/**
- * @param skills    {string[] | Set<string>}
- */
-function renderSkills(skills) {
-    let skillHTML = "";
-    skills.forEach(skill => {
-        skillHTML += "<label>" +
-            "    <input type=\"checkbox\" onchange='getSelectedSkills()'>" +
-            "    <span class=\"checkbox\"></span>" +
-            "    <a>"+ skill +"</a>" +
-            "</label>"
-    })
+    renderModule.renderSkills(skills);
+    renderModule.renderCards(users);
+})();
 
-    document.getElementById("skills").innerHTML = skillHTML;
+async function renderUsersWithSelectedSkills() {
+    const DataGenerator = await import("./utils/DataGenerator.js");
+    const RenderModule = await import("./utils/RenderModule.js");
+
+    const dataGenerator = DataGenerator.default;
+    const renderModule = new RenderModule.default;
+
+    const usersWithSkills = dataGenerator.getUsersWithSkills(users, getSelectedSkills());
+    const usersForRender = usersWithSkills.length > 0 ? usersWithSkills : users;
+
+    renderModule.renderCards(usersForRender);
 }
 
-/**
- * @param users {User[]}
- */
-function renderCards(users) {
-    let cardsHTML = "";
-    users.forEach(user => {
-        const fullName = user.firstName + " " + user.lastName;
-        const profileUrl = "./profiles/" + user.firstName.toLowerCase() + "_" + user.lastName.toLowerCase() + ".html";
+function getSelectedSkills()
+{
+    const checkboxes = document.getElementsByTagName("input");
+    const checkedSkills = new Set();
 
-        cardsHTML += "<div class=\"card\" onclick=\"window.location = '" + profileUrl + "'\">\n" +
-            "                    <img src=\"assets/img/avatars/avatar.jpg\" alt='Image of "+ fullName +"'>\n" +
-            "                    <div class=\"card-desc\">\n" +
-            "                        <h6>" + fullName +"</h6>\n" +
-            "                        <div class=\"skill-list\">\n";
+    for (const checkbox of checkboxes)
+    {
+        if (checkbox.checked)
+        {
+            checkedSkills.add(checkbox.id);
+        }
+    }
 
-        user.skills.forEach(skill => {
-            cardsHTML += ("<a>" + skill + "</a>")
-        })
-
-        cardsHTML += "</div></div></div>";
-    })
-    document.getElementById("cards").innerHTML = cardsHTML;
+    return checkedSkills;
 }
 
-function getSelectedSkills() {
-    console.log("Ich bin selected Skills!")
-}

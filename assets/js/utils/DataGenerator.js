@@ -130,4 +130,23 @@ export default class DataGenerator {
 
         return skills;
     }
+
+    /**
+     * @param users {User[]}
+     * @param skills {string[] | Set<string>}
+     */
+    static getUsersWithSkills(users, skills) {
+        const usersWithSkills = []
+
+        users.forEach(user => {
+            skills.forEach(skill => {
+                if (user.skills.includes(skill))
+                {
+                    usersWithSkills.push(user);
+                }
+            })
+        })
+
+        return usersWithSkills;
+    }
 }
