@@ -88,11 +88,11 @@ label > .checkbox:after {
     transform: rotate(45deg);
 }
 
-#profifiles {
+#profiles {
     margin-top: 5rem;
 }
 
-#profifiles > .container {
+#profiles > .container {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
@@ -102,7 +102,7 @@ label > .checkbox:after {
 .card {
     background: rgba(255, 255, 255, 0.04);
     width: 15rem;
-    height: 15rem;
+    height: 17rem;
     border-radius: 10px;
     display: flex;
     flex-direction: column;
@@ -123,12 +123,13 @@ label > .checkbox:after {
 }
 
 .card-desc {
-    margin: 2rem 0;
+    margin: 2.5rem 0 1rem;
 }
 
 .skill-list {
+    padding-top: .3rem;
     display: flex;
-    column-gap: 0.5rem;
+    column-gap: 0.7rem;
     flex-wrap: wrap;
 }
 
