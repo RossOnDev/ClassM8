@@ -17,99 +17,85 @@ export default class DataGenerator {
             new User(
                 "Patrick",
                 "Rössler",
-                ["Software Entwicklung", "Linux", "Webtechnologien"],
-                "patrick@roessler.at",
+                ["Software Development", "Linux", "Webtechnologien", "Netzwerktechnik", "Datenbankdesign"],
+                "patrick.roessler@edu.fh-joanneum.at",
                 "assets/img/avatars/pp_dummy.svg"
             ),
             new User(
-                "Alexander",
-                "Steiner",
-                ["Linux", "Webtechnologien", "Datenbankdesign"],
-                "patrick@roessler.at",
+                "Hannah Pernilla",
+                "Offermann",
+                ["Datenbankdesign", "Software Development"],
+                "patrick.roessler@edu.fh-joanneum.at",
+                "assets/img/avatars/pp_dummy.svg"
+            ),
+            new User(
+                "Alaa",
+                "Abou El Fadl",
+                ["Grafik"],
+                "alaa.abouelfadl@edu.fh-joanneum.at",
+                "assets/img/avatars/pp_dummy.svg"
+            ),
+            new User(
+                "Ivan",
+                "Stipanovic",
+                ["Mathematik", "Geschichte"],
+                "ivan.stipanovic@edu.fh-joanneum.at",
+                "assets/img/avatars/pp_dummy.svg"
+            ),
+            new User(
+                "Gabriel",
+                "Ostermann",
+                ["Datenbankdesign", "Netzwerktechnik", "Software Development", "Webtechnologien", "3D-Modelierung"],
+                "gabriel.ostermann@edu.fh-joanneum.at",
+                "assets/img/avatars/pp_dummy.svg"
+            ),
+            new User(
+                "Helena",
+                "Zecevic",
+                ["Webtechnologien", "Grafik"],
+                "helena.zecevic@edu.fh-joanneum.at",
                 "assets/img/avatars/pp_dummy.svg"
             ),
             new User(
                 "Selina",
                 "Vielhaber",
-                ["Software Entwicklung", "Linux", "Webtechnologien", "Mathematik"],
-                "patrick@roessler.at",
+                ["Informatik", "Linux", "Mathematik", "Software Development", "Datenbankdesign"],
+                "helena.zecevic@edu.fh-joanneum.at",
                 "assets/img/avatars/pp_dummy.svg"
             ),
             new User(
-                "Patrick",
-                "Rössler",
-                ["Software Entwicklung", "Linux", "Webtechnologien"],
-                "patrick@roessler.at",
+                "Parisa",
+                "Fayaz Gharehbolagh",
+                [],
+                "parisa.fayazgharehbolagh@edu.fh-joanneum.at",
                 "assets/img/avatars/pp_dummy.svg"
             ),
             new User(
-                "Patrick",
-                "Rössler",
-                ["Software Entwicklung", "Linux", "Webtechnologien"],
-                "patrick@roessler.at",
+                "David",
+                "Kitting-Muhr",
+                ["Datenbankdesign", "Software Development"],
+                "david.kitting-muhr@edu.fh-joanneum.at",
                 "assets/img/avatars/pp_dummy.svg"
             ),
             new User(
-                "Patrick",
-                "Rössler",
-                ["Software Entwicklung", "Linux", "Webtechnologien"],
-                "patrick@roessler.at",
+                "Alexander",
+                "Steiner",
+                ["Linux", "Software Development", "Webtechnologien"],
+                "alexander.steiner1@edu.fh-joanneum.at",
                 "assets/img/avatars/pp_dummy.svg"
             ),
             new User(
-                "Patrick",
-                "Rössler",
-                ["Software Entwicklung", "Linux", "Webtechnologien"],
-                "patrick@roessler.at",
+                "Balazs",
+                "Spaczay",
+                ["Grafik", "Adobe"],
+                "balazs.spaczay@edu.fh-joanneum.at",
                 "assets/img/avatars/pp_dummy.svg"
             ),
             new User(
-                "Patrick",
-                "Rössler",
-                ["Software Entwicklung", "Linux", "Webtechnologien"],
-                "patrick@roessler.at",
-                "assets/img/avatars/pp_dummy.svg"
-            ),
-            new User(
-                "Patrick",
-                "Rössler",
-                ["Software Entwicklung", "Linux", "Webtechnologien"],
-                "patrick@roessler.at",
-                "assets/img/avatars/pp_dummy.svg"
-            ),
-            new User(
-                "Patrick",
-                "Rössler",
-                ["Software Entwicklung", "Linux", "Webtechnologien"],
-                "patrick@roessler.at",
-                "assets/img/avatars/pp_dummy.svg"
-            ),
-            new User(
-                "Patrick",
-                "Rössler",
-                ["Software Entwicklung", "Linux", "Webtechnologien"],
-                "patrick@roessler.at",
-                "assets/img/avatars/pp_dummy.svg"
-            ),
-            new User(
-                "Patrick",
-                "Rössler",
-                ["Software Entwicklung", "Linux", "Webtechnologien"],
-                "patrick@roessler.at",
-                "assets/img/avatars/pp_dummy.svg"
-            ),
-            new User(
-                "Patrick",
-                "Rössler",
-                ["Software Entwicklung", "Linux", "Webtechnologien"],
-                "patrick@roessler.at",
-                "assets/img/avatars/pp_dummy.svg"
-            ),
-            new User(
-                "Patrick",
-                "Rössler",
-                ["Software Entwicklung", "Linux", "Webtechnologien"],
-                "patrick@roessler.at",
+                "Ovdii",
+                "Pinalov",
+                ["Linux", "Software Development", "Webtechnologien", "3D-Modelierung"],
+                "ovdii.pinalov@edu.fh-joanneum.at",
                 "assets/img/avatars/pp_dummy.svg"
             ),
         );
