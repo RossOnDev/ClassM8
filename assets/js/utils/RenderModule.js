@@ -24,10 +24,11 @@ export default class RenderModule {
         let cardsHTML = "";
         users.forEach(user => {
             const fullName = user.firstName + " " + user.lastName;
-            const profileUrl = "./profiles/" + user.firstName.toLowerCase() + "_" + user.lastName.toLowerCase() + ".html";
+            const profileUrl = "./profiles/" + this.convertUmlauts(user.firstName.toLowerCase())
+                + "_" + this.convertUmlauts(user.lastName.toLowerCase()) + ".html";
 
             cardsHTML += "<div class=\"card\" onclick=\"window.location = '" + profileUrl + "'\">\n" +
-                "                    <img src=\"assets/img/avatars/avatar.jpg\" alt='Image of "+ fullName +"'>\n" +
+                "                    <img src='" + user.profilePic  + "' alt='Image of "+ fullName +"'>\n" +
                 "                    <div class=\"card-desc\">\n" +
                 "                        <h6>" + fullName +"</h6>\n" +
                 "                        <div class=\"skill-list\">\n";
@@ -39,5 +40,20 @@ export default class RenderModule {
             cardsHTML += "</div></div></div>";
         })
         document.getElementById("cards").innerHTML = cardsHTML;
+    }
+
+    /**
+     * @param word {string}
+     */
+    convertUmlauts(word)
+    {
+        word = word.replace("ö", "oe");
+        word = word.replace("ä", "ae");
+        word = word.replace("ü", "ue");
+        word = word.replace("Ü", "Ue");
+        word = word.replace("Ö", "Oe");
+        word = word.replace("Ä", "Ae");
+
+        return word;
     }
 }

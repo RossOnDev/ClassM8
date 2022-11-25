@@ -19,98 +19,98 @@ export default class DataGenerator {
                 "Rössler",
                 ["Software Entwicklung", "Linux", "Webtechnologien"],
                 "patrick@roessler.at",
-                "assets/img/avatars/avatar.jpg"
+                "assets/img/avatars/pp_dummy.svg"
             ),
             new User(
                 "Alexander",
                 "Steiner",
                 ["Linux", "Webtechnologien", "Datenbankdesign"],
                 "patrick@roessler.at",
-                "assets/img/avatars/avatar.jpg"
+                "assets/img/avatars/pp_dummy.svg"
             ),
             new User(
                 "Selina",
                 "Vielhaber",
                 ["Software Entwicklung", "Linux", "Webtechnologien", "Mathematik"],
                 "patrick@roessler.at",
-                "assets/img/avatars/avatar.jpg"
+                "assets/img/avatars/pp_dummy.svg"
             ),
             new User(
                 "Patrick",
                 "Rössler",
                 ["Software Entwicklung", "Linux", "Webtechnologien"],
                 "patrick@roessler.at",
-                "assets/img/avatars/avatar.jpg"
+                "assets/img/avatars/pp_dummy.svg"
             ),
             new User(
                 "Patrick",
                 "Rössler",
                 ["Software Entwicklung", "Linux", "Webtechnologien"],
                 "patrick@roessler.at",
-                "assets/img/avatars/avatar.jpg"
+                "assets/img/avatars/pp_dummy.svg"
             ),
             new User(
                 "Patrick",
                 "Rössler",
                 ["Software Entwicklung", "Linux", "Webtechnologien"],
                 "patrick@roessler.at",
-                "assets/img/avatars/avatar.jpg"
+                "assets/img/avatars/pp_dummy.svg"
             ),
             new User(
                 "Patrick",
                 "Rössler",
                 ["Software Entwicklung", "Linux", "Webtechnologien"],
                 "patrick@roessler.at",
-                "assets/img/avatars/avatar.jpg"
+                "assets/img/avatars/pp_dummy.svg"
             ),
             new User(
                 "Patrick",
                 "Rössler",
                 ["Software Entwicklung", "Linux", "Webtechnologien"],
                 "patrick@roessler.at",
-                "assets/img/avatars/avatar.jpg"
+                "assets/img/avatars/pp_dummy.svg"
             ),
             new User(
                 "Patrick",
                 "Rössler",
                 ["Software Entwicklung", "Linux", "Webtechnologien"],
                 "patrick@roessler.at",
-                "assets/img/avatars/avatar.jpg"
+                "assets/img/avatars/pp_dummy.svg"
             ),
             new User(
                 "Patrick",
                 "Rössler",
                 ["Software Entwicklung", "Linux", "Webtechnologien"],
                 "patrick@roessler.at",
-                "assets/img/avatars/avatar.jpg"
+                "assets/img/avatars/pp_dummy.svg"
             ),
             new User(
                 "Patrick",
                 "Rössler",
                 ["Software Entwicklung", "Linux", "Webtechnologien"],
                 "patrick@roessler.at",
-                "assets/img/avatars/avatar.jpg"
+                "assets/img/avatars/pp_dummy.svg"
             ),
             new User(
                 "Patrick",
                 "Rössler",
                 ["Software Entwicklung", "Linux", "Webtechnologien"],
                 "patrick@roessler.at",
-                "assets/img/avatars/avatar.jpg"
+                "assets/img/avatars/pp_dummy.svg"
             ),
             new User(
                 "Patrick",
                 "Rössler",
                 ["Software Entwicklung", "Linux", "Webtechnologien"],
                 "patrick@roessler.at",
-                "assets/img/avatars/avatar.jpg"
+                "assets/img/avatars/pp_dummy.svg"
             ),
             new User(
                 "Patrick",
                 "Rössler",
                 ["Software Entwicklung", "Linux", "Webtechnologien"],
                 "patrick@roessler.at",
-                "assets/img/avatars/avatar.jpg"
+                "assets/img/avatars/pp_dummy.svg"
             ),
         );
         return users;
