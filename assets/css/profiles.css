@@ -15,20 +15,24 @@ element's total width and height. */
 }
 
 
-#c1{
+#outer-border{
     border-radius: 15px;
     font-family: var(--roboto);
     padding: 20px; 
+    background: var(--dark-grey);
+    border: solid 3px var(--secondary-color);
     float:left;
-    width: 49%;
-    background: var(--primary-color); 
+    width:100%;
 }
 
 #c2{
+    float:left;
+    width: 50%;
     border-radius: 15px;
     font-family: var(--roboto);
     padding: 20px; 
-    background: rgba(255, 255, 255, 0.2);
+    background: rgba(255, 255, 255, 0.1);
+    border: solid 3px var(--primary-color);
 }
 
 #c3{
@@ -39,15 +43,24 @@ element's total width and height. */
     width:100%;
     background: rgba(255, 255, 255, 0.2);
     margin-top: 10px;
+    border: solid 3px var(--primary-color);
 }
-
-img {
+/*#c3 > p{
+    display: flex;
+    width: 180px;
+}*/
+/*#c3 > p:after {
+    content: "@";
+    padding-right: 4px;
+  } */
+#profile {
     max-width: 20%;
     height: auto;
     border-radius: 50%;
     display: block;
     margin-left: auto;
     margin-right: auto;
+    border: solid 3px var(--primary-color);
   }
 h2{
     text-align: center;
