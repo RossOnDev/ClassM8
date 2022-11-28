@@ -11,7 +11,7 @@ export default class DataGenerator {
      * Returns a set of users, which provided their data for the project
      * @return  {User[]}
      */
-   getUsers() {
+    getUsers() {
         const users = [];
         users.push(
             new User(
@@ -87,7 +87,7 @@ export default class DataGenerator {
             new User(
                 "Balazs",
                 "Spaczay",
-                ["Grafik", "Adobe"],
+                ["Grafik", "Adobe", "3D-Modelierung"],
                 "balazs.spaczay@edu.fh-joanneum.at",
                 "assets/img/avatars/pp_dummy.svg"
             ),

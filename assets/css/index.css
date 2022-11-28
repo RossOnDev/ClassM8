@@ -5,7 +5,7 @@ nav {
 }
 
 .container {
-    width: 80%;
+    width: 70%;
     margin: auto;
 }
 
@@ -35,7 +35,7 @@ label {
 }
 
 label:hover > a, label input:checked ~ a {
-    font-weight: 600;
+    font-weight: 700;
     color: var(--primary-color);
 }
 
@@ -89,7 +89,7 @@ label > .checkbox:after {
 }
 
 #profiles {
-    margin-top: 5rem;
+    margin: 5rem 0;
 }
 
 #profiles > .container {
@@ -101,13 +101,13 @@ label > .checkbox:after {
 
 .card {
     background: rgba(255, 255, 255, 0.04);
-    width: 15rem;
-    height: 17rem;
+    width: 21rem;
+    height: fit-content;
     border-radius: 10px;
     display: flex;
     flex-direction: column;
     padding: 1rem;
-    align-items: center;
+    align-items: flex-start;
     transition: 0.2s;
     cursor: pointer;
 }
@@ -117,13 +117,15 @@ label > .checkbox:after {
 }
 
 .card img {
+    align-self: center;
     height: 150px;
-    width:150px;
+    width: 150px;
     border-radius: 50%;
 }
 
 .card-desc {
-    margin: 2.5rem 0 1rem;
+    margin: 1.5rem 0;
+    height: 4.5em;
 }
 
 .skill-list {
@@ -134,5 +136,31 @@ label > .checkbox:after {
 }
 
 .card-desc .skill-list > a {
+    font-weight: 600;
     color: var(--primary-color);
+}
+
+footer {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background: rgba(255, 255, 255, 0.04);
+    padding: 1rem;
+}
+
+footer > h6 {
+    text-transform: uppercase;
+    font-family: var(--roboto);
+    font-size: 0.8rem;
+}
+
+footer a{
+    color: white;
+    text-decoration: none;
+    transition: 0.2s;
+    text-align: center;
+}
+
+footer a:link:hover {
+    color: var(--primary-color)
 }
