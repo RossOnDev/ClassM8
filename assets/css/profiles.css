@@ -1,21 +1,11 @@
 @import "general.css";
 
 * {
-    box-sizing: border-box;
-    /* The CSS box-sizing property allows us to include the padding and border in an 
-element's total width and height. */
-}
-
-#box {
-    width: 200px;
-    height: 150px; 
-    border-radius: 15px;
-    font-family: var(--roboto);
-    padding: 20px;
+    box-sizing: border-box; /* So Padding and Border are included in the  height and width values */
 }
 
 
-#outer-border{
+.outer-border{
     border-radius: 15px;
     font-family: var(--roboto);
     padding: 20px; 
@@ -25,7 +15,7 @@ element's total width and height. */
     width:100%;
 }
 
-#c2{
+.c2{
     float:left;
     width: 50%;
     border-radius: 15px;
@@ -35,36 +25,29 @@ element's total width and height. */
     border: solid 3px var(--primary-color);
 
 }
-#c2 > h4{
+.c2 > h4{
     font-size: 2rem;
 }
-#c2 > h6{
+.c2 > h6{
     font-size: 1.5rem;
 }
-#c2 > ul{
+.c2 > ul{
     font-size: 1rem;
     margin: 0.5rem;
 }
 
-#c3{
+.c3{
     border-radius: 15px;
     font-family: var(--roboto);
     padding: 20px; 
     float:left;
     width:100%;
-    background: rgba(255, 255, 255, 0.2);
+    background: rgba(255, 255, 255, 0.1);
     margin-top: 10px;
     border: solid 3px var(--primary-color);
 }
-/*#c3 > p{
-    display: flex;
-    width: 180px;
-}*/
-/*#c3 > p:after {
-    content: "@";
-    padding-right: 4px;
-  } */
-#profile {
+
+.profile {
     max-width: 20%;
     height: auto;
     border-radius: 50%;
@@ -76,11 +59,13 @@ element's total width and height. */
 h2{
     text-align: center;
 }
+h4, h6{
+    color:var(--primary-color);
+}
 /* Use a media query to add a break point at 800px: */
 @media screen and (max-width: 1000px) {
-    #c1,
-    #c2,
-    #c3 {
+    .c2,
+    .c3 {
         width: 100%; /* The width is 100%, when the viewport is 800px or smaller */
     }
 }
