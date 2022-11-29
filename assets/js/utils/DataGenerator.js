@@ -19,14 +19,21 @@ export default class DataGenerator {
                 "Rössler",
                 ["Software Development", "Linux", "Webtechnologien", "Netzwerktechnik", "Datenbankdesign"],
                 "patrick.roessler@edu.fh-joanneum.at",
-                "assets/img/avatars/pp_dummy.svg"
+                "assets/img/avatars/pp_patrick.png"
+            ),
+            new User(
+                "Alexander",
+                "Steiner",
+                ["Linux", "Software Development", "Webtechnologien"],
+                "alexander.steiner1@edu.fh-joanneum.at",
+                "assets/img/avatars/pp_alex.jpg"
             ),
             new User(
                 "Hannah Pernilla",
                 "Offermann",
                 ["Datenbankdesign", "Software Development"],
-                "patrick.roessler@edu.fh-joanneum.at",
-                "assets/img/avatars/pp_dummy.svg"
+                "hannah.offermann@edu.fh-joanneum.at",
+                "assets/img/avatars/pp_hp.png"
             ),
             new User(
                 "Alaa",
@@ -40,14 +47,14 @@ export default class DataGenerator {
                 "Stipanovic",
                 ["Mathematik", "Geschichte"],
                 "ivan.stipanovic@edu.fh-joanneum.at",
-                "assets/img/avatars/pp_dummy.svg"
+                "assets/img/avatars/pp_ivan.jpg"
             ),
             new User(
                 "Gabriel",
                 "Ostermann",
                 ["Datenbankdesign", "Netzwerktechnik", "Software Development", "Webtechnologien", "3D-Modelierung"],
                 "gabriel.ostermann@edu.fh-joanneum.at",
-                "assets/img/avatars/pp_dummy.svg"
+                "assets/img/avatars/pp_gabriel.jpg"
             ),
             new User(
                 "Helena",
@@ -75,13 +82,6 @@ export default class DataGenerator {
                 "Kitting-Muhr",
                 ["Datenbankdesign", "Software Development"],
                 "david.kitting-muhr@edu.fh-joanneum.at",
-                "assets/img/avatars/pp_dummy.svg"
-            ),
-            new User(
-                "Alexander",
-                "Steiner",
-                ["Linux", "Software Development", "Webtechnologien"],
-                "alexander.steiner1@edu.fh-joanneum.at",
                 "assets/img/avatars/pp_dummy.svg"
             ),
             new User(
