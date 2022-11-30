@@ -1,7 +1,7 @@
 import User from "../models/User.js";
 
 /**
- *  @Author Patirck Rössler
+ *  @Author Patrick Rössler
  *  The DataGenerator class is a collection of function to return useful or test data.
  */
 export default class DataGenerator {
@@ -98,6 +98,13 @@ export default class DataGenerator {
                 "ovdii.pinalov@edu.fh-joanneum.at",
                 "assets/img/avatars/pp_dummy.svg"
             ),
+            new User(
+                "Marion",
+                "Hölzl",
+                [],
+                "marion.hoelzl@edu.fh-joanneum.at",
+                "assets/img/avatars/pp_marion.jpg"
+            )
         );
         return users;
     }
