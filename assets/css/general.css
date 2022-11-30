@@ -53,6 +53,31 @@ p {
      font-size: 1rem;
  }
 
+.footer-content {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background: rgba(255, 255, 255, 0.04);
+    padding: 1rem;
+}
+
+.footer-content > h6 {
+    text-transform: uppercase;
+    font-family: var(--roboto);
+    font-size: 0.8rem;
+}
+
+.footer-content a{
+    color: white;
+    text-decoration: none;
+    transition: 0.2s;
+    text-align: center;
+}
+
+.footer-content a:link:hover {
+    color: var(--primary-color)
+}
+
  /* Tablet */
 @media (min-width: 768px) {
     h1 {
