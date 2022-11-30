@@ -1,11 +1,11 @@
 @import "general.css";
 
-* {
+*{
     box-sizing: border-box; /* So Padding and Border are included in the  height and width values */
 }
 
 .test{
-    display: flex;
+
 }
 
 .outer-border{
@@ -13,33 +13,27 @@
     font-family: var(--roboto);
     padding: 20px; 
     background: var(--dark-grey);
-    border: solid 3px var(--secondary-color);
+    border: solid 3px darkgray;
     float:left;
     width:100%;
 }
 
 .c2{
     float:left;
-    width: 50%;
+    width: 100%;
     border-radius: 15px;
     font-family: var(--roboto);
     padding: 20px; 
     background: rgba(255, 255, 255, 0.1);
     border: solid 3px var(--primary-color);
-    font-size: 1rem;
-
-}
-.c2 > h4{
-    font-size: 4vw;
-}
-.c2 > h6{
-    font-size: 3vw;
+    margin: 2px;
+    margin-bottom: 20px;
 }
 .c2 > p{
-    font-size: 2vw;
+    font-size: 3vw;
 }
 .c2 > ul{
-    font-size: 2.5vw;
+    font-size: 3vw;
     margin: 0.5rem;
 }
 
@@ -50,13 +44,8 @@
     float:left;
     width:100%;
     background: rgba(255, 255, 255, 0.1);
-    margin-top: 10px;
     border: solid 3px var(--primary-color);
     font-size: 2rem;
-}
-
-.c3 > h4{
-    font-size: 4vw;
 }
 
 .profile {
@@ -68,24 +57,89 @@
     margin-right: auto;
     border: solid 3px var(--primary-color);
   }
-h2{
+
+h1{
     text-align: center;
-    font-size: 2.5rem;
+    font-size: 7vw;
 }
 h4{
     color:var(--primary-color);
-    font-size: 2.5rem;
+    font-size: 4vw;
 }
 
-h6{
+h5{
     color:var(--primary-color);
-    font-size: 1.5rem;
+    font-size: 3vw;
+}
+
+.links{
+    height: auto;
+    width: 10%;
 }
 /* Use a media query to add a break point at 1000px: */
 
-@media screen and (max-width: 1000px) {
-    .c2,
-    .c3 {
-        width: 100%; /* The width is 100%, when the viewport is 1000px or smaller */
+/* Tablets */
+@media (min-width: 768px) {
+    .c2{
+        width: 50%; /* The width is 100%, when the viewport is 1000px or smaller */
     }
+    .c3{
+        width: 100%;
+    }
+    .test{
+        flex-display: collum;
+    }
+}
+@media (min-width: 992px) {
+    .test {
+        display: flex;
+    }
+    .c2 >h1{
+        text-align: center;
+        font-size: 4vw;
+    }
+    .c2 > h4, .c3 > h4{
+        color:var(--primary-color);
+        font-size: 2vw;
+    }
+
+    .c2 > h5{
+        color:var(--primary-color);
+        font-size: 1.5vw;
+    }
+    .c2 > p{
+        font-size: 1.5vw;
+    }
+    .c2 > ul{
+        font-size: 1.5vw;
+        margin: 0.5rem;
+    }
+    .links{
+        width: 5%;
+    }
+}
+
+.footer-content {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background: rgba(255, 255, 255, 0.04);
+    padding: 1rem;
+}
+
+.footer-content > h6 {
+    text-transform: uppercase;
+    font-family: var(--roboto);
+    font-size: 0.8rem;
+}
+
+.footer-content a{
+    color: white;
+    text-decoration: none;
+    transition: 0.2s;
+    text-align: center;
+}
+
+.footer-content a:link:hover {
+    color: var(--primary-color)
 }
