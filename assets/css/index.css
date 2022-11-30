@@ -1,6 +1,7 @@
 @import "general.css";
 
 nav {
+    margin-top: 1vh;
     height: 10vh;
 }
 
@@ -12,6 +13,65 @@ footer {
     height: 5vh;
 }
 
+nav .navbar {
+    display: flex;
+    flex-direction: column;
+}
+
+nav .menu-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    margin: auto;
+}
+
+nav h1 {
+    font-size: 3rem;
+}
+
+nav img {
+    height: 2rem;
+}
+
+nav .menu-items {
+    height: calc(100vh - 10vh); /* 100 - Nav height */
+    position: absolute;
+    width: 100vw;
+    top: 10vh;
+    left: -100vw;
+    background: white;
+}
+
+/*
+Desktop
+nav .navbar {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    width: 70%;
+    margin: auto;
+    align-items: center;
+}
+
+nav .menu-items {}
+
+nav .menu-items ul {
+    height: 100%;
+    align-items: center;
+}
+
+nav .menu-items li {
+    list-style: none;
+    display: inline-block;
+    text-align: center;
+    width: fit-content;
+    height: 100%;
+    margin-left: 1rem;
+    font-size: 1.2rem;
+}
+*/
+
 .container {
     width: 95%;
     margin: auto;
@@ -22,7 +82,7 @@ footer {
 }
 
 .container > h2 {
-    font-size: 2rem;
+    font-size: 3rem;
     margin: -0.5rem;
 }
 
@@ -52,7 +112,7 @@ label:hover .checkbox {
     transition: .2s;
 }
 
-label > input[type=checkbox] {
+.container label > input[type=checkbox] {
     visibility: hidden;
     height: 0;
     width: 0;

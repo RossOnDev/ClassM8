@@ -8,7 +8,7 @@ export default class RenderModule {
         let skillHTML = "";
         skills.forEach(skill => {
             skillHTML += "<label>" +
-                "    <input type=\"checkbox\" id='" + skill + "'  onchange='renderUsersWithSelectedSkills()'>" +
+                "    <input type=\"checkbox\" id='" + skill + "' onchange='renderUsersWithSelectedSkills()'>" +
                 "    <span class=\"checkbox\"></span>" +
                 "    <a>"+ skill +"</a>" +
                 "</label>"
@@ -27,17 +27,18 @@ export default class RenderModule {
             const profileUrl = "./profiles/" + this.convertUmlauts(user.firstName.toLowerCase())
                 + "_" + this.convertUmlauts(user.lastName.toLowerCase()) + ".html";
 
-            cardsHTML += "<div class=\"card\" onclick=\"window.location = '" + profileUrl + "'\">\n" +
-                "                    <img src='" + user.profilePic  + "' alt='Image of "+ fullName +"'>\n" +
-                "                    <div class=\"card-desc\">\n" +
-                "                        <h6>" + fullName +"</h6>\n" +
-                "                        <div class=\"skill-list\">\n";
+            cardsHTML +=
+                "   <section class=\"card\" onclick=\"window.location = '" + profileUrl + "'\">" +
+                "        <img src='" + user.profilePic  + "' alt='Image of "+ fullName +"'>" +
+                "            <div class=\"card-desc\">" +
+                "                <h6>" + fullName +"</h6>" +
+                "                <div class=\"skill-list\">";
 
             user.skills.forEach(skill => {
                 cardsHTML += ("<a>" + skill + "</a>")
             })
 
-            cardsHTML += "</div></div></div>";
+            cardsHTML += "</div></div></section>";
         })
         document.getElementById("cards").innerHTML = cardsHTML;
     }
