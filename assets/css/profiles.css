@@ -4,6 +4,9 @@
     box-sizing: border-box; /* So Padding and Border are included in the  height and width values */
 }
 
+.test{
+    display: flex;
+}
 
 .outer-border{
     border-radius: 15px;
@@ -23,16 +26,20 @@
     padding: 20px; 
     background: rgba(255, 255, 255, 0.1);
     border: solid 3px var(--primary-color);
+    font-size: 1rem;
 
 }
 .c2 > h4{
-    font-size: 2rem;
+    font-size: 4vw;
 }
 .c2 > h6{
-    font-size: 1.5rem;
+    font-size: 3vw;
+}
+.c2 > p{
+    font-size: 2vw;
 }
 .c2 > ul{
-    font-size: 1rem;
+    font-size: 2.5vw;
     margin: 0.5rem;
 }
 
@@ -45,10 +52,15 @@
     background: rgba(255, 255, 255, 0.1);
     margin-top: 10px;
     border: solid 3px var(--primary-color);
+    font-size: 2rem;
+}
+
+.c3 > h4{
+    font-size: 4vw;
 }
 
 .profile {
-    max-width: 20%;
+    max-width: 30%;
     height: auto;
     border-radius: 50%;
     display: block;
@@ -58,14 +70,22 @@
   }
 h2{
     text-align: center;
+    font-size: 2.5rem;
 }
-h4, h6{
+h4{
     color:var(--primary-color);
+    font-size: 2.5rem;
 }
-/* Use a media query to add a break point at 800px: */
+
+h6{
+    color:var(--primary-color);
+    font-size: 1.5rem;
+}
+/* Use a media query to add a break point at 1000px: */
+
 @media screen and (max-width: 1000px) {
     .c2,
     .c3 {
-        width: 100%; /* The width is 100%, when the viewport is 800px or smaller */
+        width: 100%; /* The width is 100%, when the viewport is 1000px or smaller */
     }
 }
