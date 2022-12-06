@@ -53,6 +53,68 @@ p {
      font-size: 1rem;
  }
 
+
+nav .navbar {
+    display: flex;
+    flex-direction: column;
+}
+
+nav .menu-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    margin: auto;
+}
+
+nav h1 {
+    font-size: 2.5rem;
+}
+
+nav h1 > a {
+    color: white;
+    text-decoration: none;
+}
+
+nav img {
+    height: 2rem;
+    cursor: pointer;
+}
+
+nav .menu-items {
+    height: calc(100vh - 8vh); /* 100 - Nav height */
+    position: absolute;
+    width: 100%;
+    top: 8vh;
+    left: -100vw;
+    background: var(--dark-grey);
+    filter: brightness(1.4);
+    transition: .2s;
+}
+
+nav ul {
+    margin-top: 3rem;
+}
+
+nav li {
+    list-style: none;
+    font-size: 2rem;
+    text-align: center;
+    padding-bottom: 2rem;
+    text-transform: uppercase;
+}
+
+nav li a {
+    text-decoration: none;
+    color: white;
+    padding-bottom: .5rem;
+    animation: .2s;
+}
+
+nav li a:hover {
+    color: var(--primary-color)
+}
+
 .footer-content {
     display: flex;
     align-items: center;
@@ -103,6 +165,11 @@ p {
     h6 {
         font-size: 1.5rem;
     }
+
+    nav .menu-header {
+        margin-top: 0.7rem;
+        width: 80%;
+    }
 }
 
 /* Desktop */
@@ -129,5 +196,48 @@ p {
 
     h6 {
         font-size: 1.5rem;
+    }
+
+    nav {
+        width: 65%;
+        margin: auto;
+    }
+
+    nav .navbar {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+
+    }
+
+    nav .menu-header, nav .menu-items {
+        display: flex;
+        height: 10vh;
+        position: initial;
+        background: initial;
+        margin: 0;
+        align-items: center;
+    }
+
+    nav img {
+        display: none;
+    }
+
+    nav .menu-items {
+        justify-content: flex-end;
+    }
+
+    nav .menu-items ul{
+        align-items: center;
+    }
+
+    nav .menu-items li {
+        list-style: none;
+        display: inline-block;
+        text-align: center;
+        width: fit-content;
+        margin-left: 1rem;
+        font-size: 1.6rem;
+        font-family: var(--bebas-neue);
     }
 }
