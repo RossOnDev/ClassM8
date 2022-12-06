@@ -48,7 +48,7 @@ function toggleMenuBar()
     let menuItems = document.getElementById("menu-items");
 
 
-    if(menuItems.style.left === "0px")
+    if (menuItems.style.left === "0px")
     {
         menuItems.style.left = "-100vw";
     }
@@ -58,3 +58,18 @@ function toggleMenuBar()
     }
 }
 
+function toggleDropdown()
+{
+    const dropDrown = document.getElementById("drop-down");
+    let content = dropDrown.getElementsByClassName("drop-down-content")[0];
+
+    if (content.style.display === "none" || content.style.display === "")
+    {
+        content.style.display = "block";
+    }
+    else
+    {
+        content.style.display = "none";
+    }
+
+}

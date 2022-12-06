@@ -7,11 +7,11 @@ export default class RenderModule {
     renderSkills(skills) {
         let skillHTML = "";
         skills.forEach(skill => {
-            skillHTML += "<label>" +
+            skillHTML += "<div class='skill'><label>" +
                 "    <input type=\"checkbox\" id='" + skill + "' onchange='renderUsersWithSelectedSkills()'>" +
                 "    <span class=\"checkbox\"></span>" +
                 "    <a>"+ skill +"</a>" +
-                "</label>"
+                "</label></div>"
         })
 
         document.getElementById("skills").innerHTML = skillHTML;

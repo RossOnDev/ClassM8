@@ -23,19 +23,100 @@ footer {
 }
 
 .container > h2 {
-
     margin: -0.5rem;
 }
 
-.container .skills {
-    display: flex;
-    justify-content: center;
-    gap: 1rem 2rem;
-    flex-wrap: wrap;
-    margin-top: 2rem;
+.drop-down {
+    position: relative;
 }
 
-label {
+.drop-down .drop-down-selection {
+    background: rgba(255, 255, 255, 0.04);
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid white;
+    border-radius: 5px;
+}
+
+.drop-down .drop-down-content {
+    position: absolute;
+    display: block;
+    width: 100%;
+    background: #282828;
+}
+
+.drop-down label {
+    width: 100%;
+}
+
+.container .skills {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    padding: 1rem 0;
+    gap: .3rem;
+}
+
+.skill {
+    padding: .2rem 0;
+    flex: 1;
+}
+
+.skill label {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    align-items: center;
+    cursor: pointer;
+}
+
+.skill label > input[type=checkbox] {
+    visibility: hidden;
+    height: 0;
+    width: 0;
+}
+
+.skill label > .checkbox {
+    position: relative;
+    height: 1.5rem;
+    width: 1.5rem;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 6px;
+}
+
+.skill input:checked ~ .checkbox {
+    border: 1px solid var(--primary-color);
+    background: var(--primary-color-focused);
+}
+
+/* Source: https://www.w3schools.com/howto/howto_css_custom_checkbox.asp */
+.skill .checkbox:after {
+   content: "";
+   position: absolute;
+   display: none;
+}
+
+/* Source: https://www.w3schools.com/howto/howto_css_custom_checkbox.asp */
+.skill input:checked ~ .checkbox:after {
+   display: block;
+}
+
+/* Source: https://www.w3schools.com/howto/howto_css_custom_checkbox.asp */
+.skill label > .checkbox:after {
+    left: 9px;
+    top: 5px;
+    width: 5px;
+    height: 10px;
+    border: solid var(--primary-color);
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+
+/*label {
     display: flex;
     flex-direction: row;
     gap: .5rem;
@@ -73,19 +154,19 @@ label input:checked ~ .checkbox {
     background: var(--primary-color-focused);
 }
 
-/* Source: https://www.w3schools.com/howto/howto_css_custom_checkbox.asp */
+!* Source: https://www.w3schools.com/howto/howto_css_custom_checkbox.asp *!
 .checkbox:after {
     content: "";
     position: absolute;
     display: none;
 }
 
-/* Source: https://www.w3schools.com/howto/howto_css_custom_checkbox.asp */
+!* Source: https://www.w3schools.com/howto/howto_css_custom_checkbox.asp *!
 label input:checked ~ .checkbox:after {
     display: block;
 }
 
-/* Source: https://www.w3schools.com/howto/howto_css_custom_checkbox.asp */
+!* Source: https://www.w3schools.com/howto/howto_css_custom_checkbox.asp *!
 label > .checkbox:after {
     left: 9px;
     top: 5px;
@@ -96,7 +177,7 @@ label > .checkbox:after {
     -webkit-transform: rotate(45deg);
     -ms-transform: rotate(45deg);
     transform: rotate(45deg);
-}
+}*/
 
 #profiles {
     margin-top: 5rem;

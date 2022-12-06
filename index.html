@@ -30,13 +30,25 @@
             <section>
                 <div class="container">
                     <h2>I NEED HELP IN</h2>
-                    <div class="skills" id="skills"></div>
+                    <!-- TODO Dropdown menu for Mobile and Tablet -->
+
+                    <section id="drop-down" class="drop-down">
+                        <div class="drop-down-selection" onclick="toggleDropdown()">
+                            <p>Select Skills</p>
+                            <img src="assets/img/icons/arrow-down.svg" alt="Picture of an arrow pointing down">
+                        </div>
+
+                        <div class="drop-down-content">
+                            <div class="skills" id="skills"></div>
+                        </div>
+                    </section>
+
+                    <div class="skills" id="skils"></div>
                 </div>
             </section>
 
             <section id="profiles">
                 <div class="container" id="cards">
-                    <!-- TODO Dropdown menu for Mobile and Tablet -->
                     <!-- Dynamic rendering from ./assets/js/script.js -->
                 </div>
             </section>
