@@ -67,10 +67,6 @@ nav .menu-header {
     margin: auto;
 }
 
-nav h1 {
-    font-size: 2.5rem;
-}
-
 nav h1 > a {
     color: white;
     text-decoration: none;
@@ -175,27 +171,27 @@ nav li a:hover {
 /* Desktop */
 @media (min-width: 992px) {
     h1 {
-        font-size: 4rem;
+        font-size: 2.8rem;
     }
 
     h2 {
-        font-size: 3.5rem;
-    }
-
-    h3 {
-        font-size: 3rem;
-    }
-
-    h4 {
         font-size: 2.5rem;
     }
 
+    h3 {
+        font-size: 2.3rem;
+    }
+
+    h4 {
+        font-size: 2em;
+    }
+
     h5 {
-        font-size: 2rem;
+        font-size: 1.5rem;
     }
 
     h6 {
-        font-size: 1.5rem;
+        font-size: 1.3rem;
     }
 
     nav {
