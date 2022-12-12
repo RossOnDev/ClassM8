@@ -9,13 +9,9 @@
 }
 
 .outer-border{
-    border-radius: 15px;
-    font-family: var(--roboto);
-    padding: 20px; 
-    background: var(--dark-grey);
-    border: solid 3px darkgray;
+    padding: 20px;
     width:100%;
-
+    height: auto;
 }
 
 .c2{
@@ -84,11 +80,16 @@ h5{
     display: flex;
     height: 150px;
     border-radius: 50%;
+
+}
+
+.piechart.pie-5 {
     background-image: conic-gradient(
-            pink 90deg,
-            lightblue 0 180deg,
-            orange 0 270deg,
-            lightgreen 0);
+            pink 72deg,
+            lightblue 0 144deg,
+            orange 0 216deg,
+            lightgreen 0 288deg,
+            blue 0);
 }
 
 .segment1{
@@ -201,7 +202,6 @@ footer {
         width: 70%;
         margin: auto;
         padding: 10px;
-        height: 90vh;
     }
     .test {
         display: flex;
