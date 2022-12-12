@@ -14,8 +14,8 @@
     padding: 20px; 
     background: var(--dark-grey);
     border: solid 3px darkgray;
-    float:left;
     width:100%;
+
 }
 
 .c2{
@@ -59,7 +59,7 @@
     border: solid 3px var(--primary-color);
   }
 
-h1{
+.top{
     text-align: center;
     font-size: 7vw;
 }
@@ -78,35 +78,11 @@ h5{
     width: 10%;
 }
 
-.footer-content {
+
+.piechart{
+    width: 150px;
     display: flex;
-    align-items: center;
-    flex-direction: column;
-    background: rgba(255, 255, 255, 0.04);
-    padding: 1rem;
-}
-
-.footer-content > h6 {
-    text-transform: uppercase;
-    font-family: var(--roboto);
-    font-size: 0.8rem;
-}
-
-.footer-content a{
-    color: white;
-    text-decoration: none;
-    transition: 0.2s;
-    text-align: center;
-}
-
-.footer-content a:link:hover {
-    color: var(--primary-color)
-}
-
-.piechart {
-    width: 200px;
-    display: flex;
-    height: 200px;
+    height: 150px;
     border-radius: 50%;
     background-image: conic-gradient(
             pink 90deg,
@@ -117,16 +93,18 @@ h5{
 
 .segment1{
     position: absolute;
-    bottom: 130px;
-    left: 40px;
+    bottom: 100px;
+    left: 35px;
     text-shadow: 1px 1px 1px black;
+    font-size: 0.75rem;
 }
 
 .segment2{
     position: absolute;
-    bottom: 130px;
-    left: 130px;
+    bottom: 100px;
+    left: 100px;
     text-shadow: 1px 1px 1px black;
+    font-size: 0.75rem;
 }
 
 .segment3{
@@ -134,13 +112,15 @@ h5{
     bottom: 75px;
     left: 40px;
     text-shadow: 1px 1px 1px black;
+    font-size: 0.75rem;
 }
 
 .segment4{
     position: absolute;
     bottom: 75px;
-    left: 130px;
+    left: 100px;
     text-shadow: 1px 1px 1px black;
+    font-size: 0.75rem;
 }
 
 .legende{
@@ -158,22 +138,71 @@ h5{
     border: solid 3px var(--primary-color);
 }
 
+footer {
+    height: 5vh;
+    width: 100%;
+    float: right;
+}
+
 /* Tablets */
-@media (min-width: 768px) {
+@media (min-width: 769px) {
     .c1 {
         width: 50%;
     }
     .c2{
-        width: 50%; /* The width is 100%, when the viewport is 1000px or smaller */
+        width: 49%; /* The width is 100%, when the viewport is 1000px or smaller */
     }
     .c3{
         width: 100%;
     }
     .test{
-        flex-display: collum;
+        display: flex;
     }
+    .c2 >h1{
+        text-align: center;
+        font-size: 4vw;
+    }
+    .c2 > h4, .c3 > h4{
+        color:var(--primary-color);
+        font-size: 2vw;
+    }
+
+    .c2 > h5{
+        color:var(--primary-color);
+        font-size: 1.5vw;
+    }
+    .c2 > p{
+        font-size: 1.5vw;
+    }
+    .c2 > ul{
+        font-size: 1.5vw;
+        margin: 0.5rem;
+    }
+    .segment1{
+        top: 75px;
+        left: 35px;
+    }
+    .segment2{
+        top: 75px;
+        left: 100px;
+    }
+    .segment3{
+        top: 100px;
+        left: 35px;
+    }
+    .segment4{
+        top: 100px;
+        left: 100px;
+    }
+
 }
 @media (min-width: 992px) {
+    .outer-border{
+        width: 70%;
+        margin: auto;
+        padding: 10px;
+        height: 90vh;
+    }
     .test {
         display: flex;
     }
@@ -199,5 +228,32 @@ h5{
     }
     .links{
         width: 5%;
+    }
+    .piechart{
+        width: 200px;
+        height: 200px;
+    }
+    .legende{
+        width: 30%;
+    }
+    .segment1{
+        top: 100px;
+        left: 35px;
+        font-size: 1rem;
+    }
+    .segment2{
+        top: 100px;
+        left: 125px;
+        font-size: 1rem;
+    }
+    .segment3{
+        top: 125px;
+        left: 35px;
+        font-size: 1rem;
+    }
+    .segment4{
+        top: 125px;
+        left: 125px;
+        font-size: 1rem;
     }
 }

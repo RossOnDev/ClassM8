@@ -9,12 +9,24 @@
 </head>
 <body>
     <nav>
+        <div class="navbar">
+            <div class="menu-header">
+                <h1><a href="./">ClassM8</a></h1>
+                <img src="assets/img/icons/menu.svg" alt="Open or close navigation control panel"
+                     onclick="toggleMenuBar()"/>
+            </div>
 
+            <div id="menu-items" class="menu-items">
+                <ul>
+                    <li><a href="#">Menu</a></li>
+                    <li><a href="#">About us</a></li>
+                </ul>
+            </div>
+        </div>
     </nav>
-    <input type="button" value="Return" onclick="history.back()">
     <section>
         <div class="outer-border">
-            <div>
+            <div class = "top">
                 <img class="profile" src="assets/img/avatars/avatar.jpg"  alt="dummy avatar" height="auto" width="10%">
                 <h1>Steiner Alexander</h1>
             </div>
@@ -55,7 +67,6 @@
                 </div>
         </div>
     </section>
-
     <footer>
         <div class="footer-content">
             <h6>Ein Projekt für die <a href="http://www.fh-joanneum.at" target="_blank"><strong>FH JOANNEUM</strong></a></h6>
