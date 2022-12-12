@@ -28,6 +28,8 @@ footer {
 
 .drop-down {
     position: relative;
+    margin: 2rem auto;
+    width: 95%;
 }
 
 .drop-down .drop-down-selection {
@@ -41,7 +43,7 @@ footer {
 
 .drop-down .drop-down-content {
     position: absolute;
-    display: block;
+    display: none;
     width: 100%;
     background: #282828;
 }
@@ -115,72 +117,7 @@ footer {
     transform: rotate(45deg);
 }
 
-
-/*label {
-    display: flex;
-    flex-direction: row;
-    gap: .5rem;
-    align-items: center;
-    cursor: pointer;
-}
-
-label:hover > a, label input:checked ~ a {
-    font-weight: 700;
-    color: var(--primary-color);
-}
-
-label:hover .checkbox {
-    background: var(--primary-color-hovered);
-    transition: .2s;
-}
-
-.container label > input[type=checkbox] {
-    visibility: hidden;
-    height: 0;
-    width: 0;
-}
-
-label > .checkbox {
-    position: relative;
-    height: 1.5rem;
-    width: 1.5rem;
-    border: 1px solid rgba(255, 255, 255, 0.2);
-    border-radius: 6px;
-    z-index: -1;
-}
-
-label input:checked ~ .checkbox {
-    border: 1px solid var(--primary-color);
-    background: var(--primary-color-focused);
-}
-
-!* Source: https://www.w3schools.com/howto/howto_css_custom_checkbox.asp *!
-.checkbox:after {
-    content: "";
-    position: absolute;
-    display: none;
-}
-
-!* Source: https://www.w3schools.com/howto/howto_css_custom_checkbox.asp *!
-label input:checked ~ .checkbox:after {
-    display: block;
-}
-
-!* Source: https://www.w3schools.com/howto/howto_css_custom_checkbox.asp *!
-label > .checkbox:after {
-    left: 9px;
-    top: 5px;
-    width: 5px;
-    height: 10px;
-    border: solid var(--primary-color);
-    border-width: 0 3px 3px 0;
-    -webkit-transform: rotate(45deg);
-    -ms-transform: rotate(45deg);
-    transform: rotate(45deg);
-}*/
-
 #profiles {
-    margin-top: 5rem;
     margin-bottom: 2rem;
 }
 
@@ -238,6 +175,10 @@ label > .checkbox:after {
         width: 85%;
     }
 
+    .drop-down {
+        width: 85%;
+    }
+
     .card {
         width: 40%;
     }
@@ -254,6 +195,7 @@ label > .checkbox:after {
     }
 
     #profiles {
+        margin-top: 4rem;
         margin-bottom: 4rem;
     }
 
@@ -264,4 +206,34 @@ label > .checkbox:after {
     .card {
         width: 21rem;
     }
+
+    .drop-down {
+        margin: 1rem auto;
+        display: flex;
+        justify-content: center;
+    }
+
+    .drop-down .drop-down-content {
+        width: 100%;
+        position: initial;
+        display: initial;
+        background: none;
+    }
+
+    .drop-down-content .skills
+    {
+        position: initial;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .drop-down .skill {
+        flex: auto;
+    }
+
+    #drop-down .drop-down-selection {
+        display: none;
+    }
+
+
 }
