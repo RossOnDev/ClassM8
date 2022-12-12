@@ -19,77 +19,77 @@ export default class DataGenerator {
                 "Rössler",
                 ["Software Development", "Linux", "Webtechnologien", "Netzwerktechnik", "Datenbankdesign"],
                 "patrick.roessler@edu.fh-joanneum.at",
-                "assets/img/avatars/pp_patrick.png"
+                "assets/img/avatars/patrick.jpg"
             ),
             new User(
                 "Alexander",
                 "Steiner",
                 ["Linux", "Software Development", "Webtechnologien"],
                 "alexander.steiner1@edu.fh-joanneum.at",
-                "assets/img/avatars/pp_alex.jpg"
+                "assets/img/avatars/alex.jpg"
             ),
             new User(
                 "Hannah Pernilla",
                 "Offermann",
                 ["Datenbankdesign", "Software Development"],
                 "hannah.offermann@edu.fh-joanneum.at",
-                "assets/img/avatars/pp_hp.png"
+                "assets/img/avatars/hp.jpg"
             ),
             new User(
                 "Alaa",
                 "Abou El Fadl",
                 ["Grafik"],
                 "alaa.abouelfadl@edu.fh-joanneum.at",
-                "assets/img/avatars/pp_dummy.svg"
+                "assets/img/avatars/alaa.jpg"
             ),
             new User(
                 "Ivan",
                 "Stipanovic",
                 ["Mathematik", "Geschichte"],
                 "ivan.stipanovic@edu.fh-joanneum.at",
-                "assets/img/avatars/pp_ivan.jpg"
+                "assets/img/avatars/ivan.jpg"
             ),
             new User(
                 "Gabriel",
                 "Ostermann",
                 ["Datenbankdesign", "Netzwerktechnik", "Software Development", "Webtechnologien", "3D-Modelierung"],
                 "gabriel.ostermann@edu.fh-joanneum.at",
-                "assets/img/avatars/pp_gabriel.jpg"
+                "assets/img/avatars/gabriel.jpg"
             ),
             new User(
                 "Helena",
                 "Zecevic",
                 ["Webtechnologien", "Grafik"],
                 "helena.zecevic@edu.fh-joanneum.at",
-                "assets/img/avatars/pp_dummy.svg"
+                "assets/img/avatars/helena.jpg"
             ),
             new User(
                 "Selina",
                 "Vielhaber",
                 ["Informatik", "Linux", "Mathematik", "Software Development", "Datenbankdesign"],
                 "helena.zecevic@edu.fh-joanneum.at",
-                "assets/img/avatars/pp_dummy.svg"
+                "assets/img/avatars/selina.jpg"
             ),
             new User(
                 "Parisa",
                 "Fayaz Gharehbolagh",
                 [],
                 "parisa.fayazgharehbolagh@edu.fh-joanneum.at",
-                "assets/img/avatars/pp_dummy.svg"
+                "assets/img/avatars/parisa.jpg"
             ),
             new User(
                 "David",
                 "Kitting-Muhr",
                 ["Datenbankdesign", "Software Development"],
                 "david.kitting-muhr@edu.fh-joanneum.at",
-                "assets/img/avatars/pp_dummy.svg"
+                "assets/img/avatars/david.jpg"
             ),
             new User(
                 "Balazs",
                 "Spaczay",
                 ["Grafik", "Adobe", "3D-Modelierung"],
                 "balazs.spaczay@edu.fh-joanneum.at",
-                "assets/img/avatars/pp_dummy.svg"
+                "assets/img/avatars/bali.jpg"
             ),
             new User(
                 "Ovdii",
@@ -103,7 +103,7 @@ export default class DataGenerator {
                 "Hölzl",
                 [],
                 "marion.hoelzl@edu.fh-joanneum.at",
-                "assets/img/avatars/pp_marion.jpg"
+                "assets/img/avatars/marion.jpg"
             )
         );
         return users;
