@@ -4,7 +4,7 @@ export default class RenderModule {
     /**
      * @param skills    {string[] | Set<string>}
      */
-    renderSkills(skills) {
+    getSkillsListDOM(skills) {
         let skillHTML = "";
         skills.forEach(skill => {
             skillHTML += "<div class='skill'><label>" +
@@ -14,13 +14,13 @@ export default class RenderModule {
                 "</label></div>"
         })
 
-        document.getElementById("skills").innerHTML = skillHTML;
+        return skillHTML;
     }
 
     /**
      * @param users {User[]}
      */
-    renderCards(users) {
+    getCardsDOM(users) {
         let cardsHTML = "";
         users.forEach(user => {
             const fullName = user.firstName + " " + user.lastName;
@@ -40,7 +40,7 @@ export default class RenderModule {
 
             cardsHTML += "</div></div></section>";
         })
-        document.getElementById("cards").innerHTML = cardsHTML;
+        return cardsHTML;
     }
 
     /**

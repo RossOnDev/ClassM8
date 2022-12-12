@@ -10,8 +10,8 @@ let users;
     users = dataGenerator.getUsers();
     const skills = dataGenerator.getSkillsListFromUsers(users);
 
-    renderModule.renderSkills(skills);
-    renderModule.renderCards(users);
+    document.getElementById("skills").innerHTML = renderModule.getSkillsListDOM(skills);
+    document.getElementById("cards").innerHTML = renderModule.getCardsDOM(users);
 })();
 
 async function renderUsersWithSelectedSkills() {
@@ -21,10 +21,17 @@ async function renderUsersWithSelectedSkills() {
     const dataGenerator = DataGenerator.default;
     const renderModule = new RenderModule.default;
 
-    const usersWithSkills = dataGenerator.getUsersWithSkills(users, getSelectedSkills());
-    const usersForRender = usersWithSkills.length > 0 ? usersWithSkills : users;
+    const selectedSkills = getSelectedSkills();
 
-    renderModule.renderCards(usersForRender);
+    const usersWithSkills = dataGenerator.getUsersWithSkills(users, selectedSkills);
+    const usersForRender = usersWithSkills.size > 0 ? usersWithSkills : users;
+
+    let cardsHTML = renderModule.getCardsDOM(usersForRender);
+    selectedSkills.forEach(selectedSkill =>
+        cardsHTML = cardsHTML.replaceAll(selectedSkill, "<span class='selected-skill'>" + selectedSkill + "</span>")
+    )
+
+    document.getElementById("cards").innerHTML = cardsHTML;
 }
 
 function getSelectedSkills()

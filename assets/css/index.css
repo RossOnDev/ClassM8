@@ -65,6 +65,10 @@ footer {
     flex: 1;
 }
 
+.selected-skill {
+    color: var(--secondary-color)
+}
+
 .skill label {
     display: flex;
     flex-direction: row;
@@ -112,7 +116,6 @@ footer {
     height: 10px;
     border: solid var(--primary-color);
     border-width: 0 3px 3px 0;
-    -webkit-transform: rotate(45deg);
     -ms-transform: rotate(45deg);
     transform: rotate(45deg);
 }
