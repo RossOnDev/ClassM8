@@ -82,44 +82,147 @@ h5{
     border-radius: 50%;
 
 }
-
+.piechart.pie-1 {
+    background-image: conic-gradient(
+            pink 180deg,
+            pink 0 );
+}
+.piechart.pie-2 {
+    background-image: conic-gradient(
+            pink 180deg,
+            lightblue 0 );
+}
+.piechart.pie-3 {
+    background-image: conic-gradient(
+            pink 120deg,
+            lightblue 0 240deg,
+            orange 0);
+}
+.piechart.pie-4 {
+    background-image: conic-gradient(
+            pink 90deg,
+            lightblue 0 180deg,
+            orange 0 270deg,
+            lightgreen 0);
+}
 .piechart.pie-5 {
     background-image: conic-gradient(
             pink 72deg,
             lightblue 0 144deg,
             orange 0 216deg,
             lightgreen 0 288deg,
-            blue 0);
+            lightcoral 0);
+}
+/*------------------------------------------------------*/
+.pie-1.segment1{
+    position: absolute;
+    top: 85px;
+    left: 77px;
+    text-shadow: 1px 1px 1px black;
+    font-size: 1rem;
+}
+/*------------------------------------------------------*/
+.pie-2.segment1{
+    position: absolute;
+    top: 87px;
+    left: 40px;
+    text-shadow: 1px 1px 1px black;
+    font-size: 0.9rem;
+}
+.pie-2.segment2{
+    position: absolute;
+    top: 87px;
+    left: 100px;
+    text-shadow: 1px 1px 1px black;
+    font-size: 0.9rem;
+}
+/*------------------------------------------------------*/
+.pie-3.segment1{
+    position: absolute;
+    top: 71px;
+    left: 100px;
+    text-shadow: 1px 1px 1px black;
+    font-size: 0.9rem;
+}
+.pie-3.segment2{
+    position: absolute;
+    top: 115px;
+    left: 70px;
+    text-shadow: 1px 1px 1px black;
+    font-size: 0.9rem;
+}
+.pie-3.segment3{
+    position: absolute;
+    top: 71px;
+    left: 30px;
+    text-shadow: 1px 1px 1px black;
+    font-size: 0.9rem;
+}
+/*------------------------------------------------------*/
+.pie-4.segment1{
+    position: absolute;
+    top: 75px;
+    left: 45px;
+    text-shadow: 1px 1px 1px black;
+    font-size: 0.8rem;
 }
 
-.segment1{
+.pie-4.segment2{
     position: absolute;
-    bottom: 100px;
+    top: 75px;
+    left: 100px;
+    text-shadow: 1px 1px 1px black;
+    font-size: 0.8rem;
+}
+
+.pie-4.segment3{
+    position: absolute;
+    top: 100px;
+    left: 40px;
+    text-shadow: 1px 1px 1px black;
+    font-size: 0.8rem;
+}
+
+.pie-4.segment4{
+    position: absolute;
+    top: 100px;
+    left: 100px;
+    text-shadow: 1px 1px 1px black;
+    font-size: 0.8rem;
+}
+/*------------------------------------------------------*/
+.pie-5.segment1{
+    position: absolute;
+    top: 60px;
+    left: 100px;
+    text-shadow: 1px 1px 1px black;
+    font-size: 0.75rem;
+}
+.pie-5.segment2{
+    position: absolute;
+    top: 95px;
+    left: 110px;
+    text-shadow: 1px 1px 1px black;
+    font-size: 0.75rem;
+}
+.pie-5.segment3{
+    position: absolute;
+    top: 130px;
+    left: 70px;
+    text-shadow: 1px 1px 1px black;
+    font-size: 0.75rem;
+}
+.pie-5.segment4{
+    position: absolute;
+    top: 95px;
     left: 35px;
     text-shadow: 1px 1px 1px black;
     font-size: 0.75rem;
 }
-
-.segment2{
+.pie-5.segment5{
     position: absolute;
-    bottom: 100px;
-    left: 100px;
-    text-shadow: 1px 1px 1px black;
-    font-size: 0.75rem;
-}
-
-.segment3{
-    position: absolute;
-    bottom: 75px;
-    left: 40px;
-    text-shadow: 1px 1px 1px black;
-    font-size: 0.75rem;
-}
-
-.segment4{
-    position: absolute;
-    bottom: 75px;
-    left: 100px;
+    top: 60px;
+    left: 45px;
     text-shadow: 1px 1px 1px black;
     font-size: 0.75rem;
 }
@@ -151,7 +254,7 @@ footer {
         width: 50%;
     }
     .c2{
-        width: 49%; /* The width is 100%, when the viewport is 1000px or smaller */
+        width: 50%; /* The width is 100%, when the viewport is 1000px or smaller */
     }
     .c3{
         width: 100%;
@@ -179,22 +282,7 @@ footer {
         font-size: 1.5vw;
         margin: 0.5rem;
     }
-    .segment1{
-        top: 75px;
-        left: 35px;
-    }
-    .segment2{
-        top: 75px;
-        left: 100px;
-    }
-    .segment3{
-        top: 100px;
-        left: 35px;
-    }
-    .segment4{
-        top: 100px;
-        left: 100px;
-    }
+
 
 }
 @media (min-width: 992px) {
@@ -228,32 +316,5 @@ footer {
     }
     .links{
         width: 5%;
-    }
-    .piechart{
-        width: 200px;
-        height: 200px;
-    }
-    .legende{
-        width: 30%;
-    }
-    .segment1{
-        top: 100px;
-        left: 35px;
-        font-size: 1rem;
-    }
-    .segment2{
-        top: 100px;
-        left: 125px;
-        font-size: 1rem;
-    }
-    .segment3{
-        top: 125px;
-        left: 35px;
-        font-size: 1rem;
-    }
-    .segment4{
-        top: 125px;
-        left: 125px;
-        font-size: 1rem;
     }
 }
