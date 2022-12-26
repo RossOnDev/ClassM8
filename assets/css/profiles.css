@@ -77,10 +77,9 @@ h5{
 
 .piechart{
     width: 150px;
-    display: flex;
     height: 150px;
-    border-radius: 50%;
-
+    display: flex;
+    border-radius: 100%;
 }
 .piechart.pie-1 {
     background-image: conic-gradient(
@@ -233,13 +232,14 @@ h5{
     position: absolute;
     bottom: 5px;
     right: 10px;
-    width: 40%;
+    width: 35%;
     height: 95%;
     border-radius: 15px;
     font-family: var(--roboto);
     padding: 20px;
     background: rgba(255, 255, 255, 0.1);
     border: solid 3px var(--primary-color);
+    overflow-wrap: break-word;
 }
 
 footer {
@@ -276,13 +276,16 @@ footer {
         font-size: 1.5vw;
     }
     .c2 > p{
-        font-size: 1.5vw;
+        font-size: 1.75vw;
     }
     .c2 > ul{
-        font-size: 1.5vw;
+        font-size: 2vw;
         margin: 0.5rem;
     }
-
+    .piechart{
+        width: 30vh;
+        height: 30vh;
+    }
 
 }
 @media (min-width: 992px) {
@@ -316,5 +319,9 @@ footer {
     }
     .links{
         width: 5%;
+    }
+    .piechart{
+        width: 30vh;
+        height: 30vh;
     }
 }
