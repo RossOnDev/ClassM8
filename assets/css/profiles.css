@@ -14,7 +14,7 @@
     height: auto;
 }
 
-.c2{
+.info{
     position: relative;
     float:left;
     width: 100%;
@@ -24,17 +24,16 @@
     background: rgba(255, 255, 255, 0.1);
     border: solid 3px var(--primary-color);
     margin: 2px;
-    margin-bottom: 20px;
 }
-.c2 > p{
+.info > p{
     font-size: 3vw;
 }
-.c2 > ul{
+.info > ul{
     font-size: 3vw;
     margin: 0.5rem;
 }
 
-.c3{
+.bottominfo{
     border-radius: 15px;
     font-family: var(--roboto);
     padding: 20px; 
@@ -45,9 +44,9 @@
     font-size: 2rem;
 }
 
-.profile {
-    max-width: 30%;
-    height: auto;
+.profile{
+    height: 20%;
+    width: 20%;
     border-radius: 50%;
     display: block;
     margin-left: auto;
@@ -70,8 +69,8 @@ h5{
 }
 
 .links{
-    height: auto;
     width: 10%;
+    height: 10%;
 }
 
 
@@ -253,32 +252,28 @@ footer {
     .c1 {
         width: 50%;
     }
-    .c2{
+    .info{
         width: 50%; /* The width is 100%, when the viewport is 1000px or smaller */
     }
-    .c3{
+    .bottominfo{
         width: 100%;
     }
     .test{
         display: flex;
     }
-    .c2 >h1{
-        text-align: center;
-        font-size: 4vw;
+    .info > h4, .bottominfo > h4{
+        color:var(--primary-color);
+        font-size: 3vw;
     }
-    .c2 > h4, .c3 > h4{
+
+    .info > h5{
         color:var(--primary-color);
         font-size: 2vw;
     }
-
-    .c2 > h5{
-        color:var(--primary-color);
-        font-size: 1.5vw;
-    }
-    .c2 > p{
+    .info > p{
         font-size: 1.75vw;
     }
-    .c2 > ul{
+    .info > ul{
         font-size: 2vw;
         margin: 0.5rem;
     }
@@ -286,41 +281,47 @@ footer {
         width: 30vh;
         height: 30vh;
     }
+    .profile{
+        height: 10%;
+        width: 10%;
+    }
 
 }
 @media (min-width: 992px) {
-    .outer-border{
+    .outer-border {
         width: 70%;
         margin: auto;
         padding: 10px;
     }
+
     .test {
         display: flex;
     }
-    .c2 >h1{
-        text-align: center;
-        font-size: 4vw;
-    }
-    .c2 > h4, .c3 > h4{
-        color:var(--primary-color);
-        font-size: 2vw;
+
+    .info > h4, .bottominfo > h4 {
+        color: var(--primary-color);
+        font-size: 3vw;
     }
 
-    .c2 > h5{
-        color:var(--primary-color);
+    .info > h5 {
+        color: var(--primary-color);
+        font-size: 2.5vw;
+    }
+
+    .info > p {
         font-size: 1.5vw;
     }
-    .c2 > p{
-        font-size: 1.5vw;
-    }
-    .c2 > ul{
+
+    .info > ul {
         font-size: 1.5vw;
         margin: 0.5rem;
     }
-    .links{
+
+    .links {
         width: 5%;
     }
-    .piechart{
+
+    .piechart {
         width: 30vh;
         height: 30vh;
     }
