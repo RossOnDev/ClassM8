@@ -249,6 +249,57 @@ footer {
     float: right;
 }
 
+.legenda{
+    margin-left: 20px;
+    vertical-align: middle;
+    background: rgba(255, 255, 255, 0.1);
+    padding: 5px;
+    float: right;
+    height: 95%;
+    width: 35%;
+    bottom: 5px;
+    right: 10px;
+    position: absolute;
+    border-radius: 15px;
+    font-family: var(--roboto);
+    border: solid 3px var(--primary-color);
+    overflow-wrap: anywhere;
+}
+
+.entry {
+    display: flex;
+    flex-direction: column;
+}
+
+.entry-color-text {
+    min-height: 2vw;
+    min-width: 2vw;
+    font-size: 3vw;
+}
+
+/*.entry-text {
+    margin-left: 5px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}*/
+
+#color1 {
+    background-color: pink;
+}
+#color2 {
+    background-color: lightblue;
+}
+#color3 {
+    background-color: orange;
+}
+#color4 {
+    background-color: lightgreen;
+}
+#color5 {
+    background-color: lightcoral;
+}
+
+
 /* Tablets */
 @media (min-width: 769px) {
     .c1 {
@@ -292,6 +343,9 @@ footer {
     .profile{
         height: 10%;
         width: 10%;
+    }
+    .entry-color-text {
+        font-size: 1.75vw;
     }
 }
 @media (min-width: 992px) {
@@ -338,52 +392,7 @@ footer {
         /*width: 30vh;
         height: 30vh;*/
     }
-}
-.legenda{
-    margin-left: 20px;
-    vertical-align: middle;
-    background: rgba(255, 255, 255, 0.1);
-    padding: 5px;
-    float: right;
-    height: 95%;
-    width: 35%;
-    bottom: 5px;
-    right: 10px;
-    position: absolute;
-    border-radius: 15px;
-    font-family: var(--roboto);
-    border: solid 3px var(--primary-color);
-    overflow-wrap: anywhere;
-}
-
-.entry {
-    display: flex;
-    align-items: center;
-}
-
-.entry-color {
-    min-height: 2vw;
-    min-width: 2vw;
-}
-
-.entry-text {
-    margin-left: 5px;
-    margin-top: 5px;
-    margin-bottom: 5px;
-}
-
-#color1 {
-    background-color: pink;
-}
-#color2 {
-    background-color: orange;
-}
-#color3 {
-    background-color: lightblue;
-}
-#color4 {
-    background-color: lightgreen;
-}
-#color5 {
-    background-color: lightcoral;
+    .entry-color-text {
+        font-size: 1.3vw;
+    }
 }
