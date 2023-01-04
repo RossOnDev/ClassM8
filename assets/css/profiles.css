@@ -69,6 +69,9 @@ h5{
     height: 10%;
 }
 
+#Email:hover{
+    background: rgb(255, 255, 255, 0.2);
+}
 
 .piechart{
     width: 35vw;
@@ -266,17 +269,43 @@ footer {
     overflow-wrap: anywhere;
 }
 
-.entry {
+.entry1{
     display: flex;
-    flex-direction: column;
+    flex-flow: column;
+    height: 100%;
 }
-
+.entry2{
+    display: flex;
+    flex-flow: column;
+    height: 50%;
+}
+.entry3{
+    display: flex;
+    flex-flow: column;
+    height: 33.33%;
+}
+.entry4{
+    display: flex;
+    flex-flow: column;
+    height: 25%;
+}
+.entry5{
+    display: flex;
+    flex-flow: column;
+    height: 20%;
+}
 .entry-color-text {
     min-height: 2vw;
     min-width: 2vw;
     font-size: 3vw;
+    flex: 1 1 auto;
+    text-align: center;
+    display: table;
 }
-
+span{
+    display: table-cell;
+    vertical-align: middle;
+}
 /*.entry-text {
     margin-left: 5px;
     margin-top: 5px;
