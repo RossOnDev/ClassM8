@@ -312,22 +312,32 @@ span{
     margin-bottom: 5px;
 }*/
 
-#color1 {
+#color-top {
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
     background-color: pink;
 }
-#color2 {
+#color-bottom {
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
     background-color: lightblue;
 }
-#color3 {
+#color1 {
     background-color: orange;
 }
-#color4 {
+#color2 {
     background-color: lightgreen;
 }
-#color5 {
+#color3 {
     background-color: lightcoral;
 }
-
+#colortop-bottom{
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    background-color: pink;
+}
 
 /* Tablets */
 @media (min-width: 769px) {
