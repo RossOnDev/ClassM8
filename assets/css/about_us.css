@@ -1,0 +1,87 @@
+@import "general.css";
+
+.content {
+    min-height: calc(100vh - 10vh - 5vh - 1.5rem); /* 100% - Height of Nav - Height of Footer - Footer Padding */
+}
+
+.middle > h1{
+    text-align: center;
+    font-size: 2rem;
+    display: block;
+}
+h4{
+    text-align: center;
+    font-size: 1rem
+}
+p{
+    text-align: center;
+
+}
+.left{
+    position: relative;
+    float:left;
+    width: 20%;
+    margin-left: 5%;
+    overflow-wrap: anywhere;
+}
+
+.middle{
+    position: relative;
+    float:left;
+    width: 50%;
+}
+.right{
+    position: relative;
+    float:left;
+    width: 20%;
+    margin-right: 5%;
+    overflow-wrap: anywhere;
+
+}
+.profile{
+    height: 90%;
+    width: 90%;
+    border-radius: 50%;
+    margin-left: 5%;
+    border: solid 3px var(--primary-color);
+}
+
+.Email{
+    color: white;
+    text-align: center;
+    display: block;
+    font-weight: bold;
+}
+
+.Email:hover{
+    color: var(--primary-color);
+}
+
+/* Tablets */
+@media (min-width: 768px) {
+    .middle > h1{
+        font-size: 3rem;
+        text-align: center;
+    }
+    h4{
+        font-size: 1.75rem;
+    }
+    p{
+        font-size: 1.4rem;
+    }
+
+}
+
+/* Desktops */
+@media (min-width: 992px) {
+    .middle > h1{
+        font-size: 4rem;
+        text-align: center;
+    }
+    h4{
+        font-size: 2rem;
+    }
+    p{
+        font-size: 1.5rem;
+    }
+}
