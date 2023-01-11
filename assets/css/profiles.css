@@ -9,6 +9,9 @@
     width:100%;
     height: auto;
 }
+h1{
+    font-size: 2rem;
+}
 
 .info{
     position: relative;
@@ -99,23 +102,23 @@ h5{
 .piechart.pie-3 {
     background-image: conic-gradient(
             pink 120deg,
-            lightblue 0 240deg,
-            orange 0);
+            lightsalmon 0 240deg,
+            lightblue 0);
 }
 .piechart.pie-4 {
     background-image: conic-gradient(
             pink 90deg,
-            lightblue 0 180deg,
-            orange 0 270deg,
-            lightgreen 0);
+            lightsalmon 0 180deg,
+            lightgreen 0 270deg,
+            lightblue 0);
 }
 .piechart.pie-5 {
     background-image: conic-gradient(
             pink 72deg,
-            lightblue 0 144deg,
-            orange 0 216deg,
-            lightgreen 0 288deg,
-            lightcoral 0);
+            lightsalmon 0 144deg,
+            lightgreen 0 216deg,
+            lightcoral 0 288deg,
+            lightblue 0);
 }
 /*------------------------------------------------------*/
 /*
@@ -323,7 +326,7 @@ span{
     background-color: lightblue;
 }
 #color1 {
-    background-color: orange;
+    background-color: lightsalmon;
 }
 #color2 {
     background-color: lightgreen;
@@ -343,6 +346,9 @@ span{
 @media (min-width: 769px) {
     .c1 {
         width: 50%;
+    }
+    h1{
+        font-size: 3rem;
     }
     .info{
         width: 50%; /* The width is 100%, when the viewport is 1000px or smaller */
@@ -380,8 +386,8 @@ span{
         height: 30vh;*/
     }
     .profile{
-        height: 10%;
-        width: 10%;
+        height: 15%;
+        width: 15%;
     }
     .entry-color-text {
         font-size: 1.75vw;
