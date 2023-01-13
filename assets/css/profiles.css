@@ -1,49 +1,42 @@
 @import "general.css";
 
-*{
+* {
     box-sizing: border-box; /* So Padding and Border are included in the  height and width values */
 }
 
-.outer-border{
+h1 {
+    font-size: 2rem;
+}
+
+h4 {
+    color: var(--primary-color);
+    font-size: 4vw;
+}
+
+h5 {
+    color: var(--primary-color);
+    font-size: 3vw;
+}
+
+span {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+footer {
+    height: 5vh;
+    width: 100%;
+    float: right;
+    margin-top: 3em;
+}
+
+.outer-border {
     padding: 20px;
-    width:100%;
+    width: 100%;
     height: auto;
 }
-h1{
-    font-size: 2rem;
-}
 
-.info{
-    position: relative;
-    float:left;
-    width: 100%;
-    border-radius: 15px;
-    font-family: var(--roboto);
-    padding: 20px; 
-    background: rgba(255, 255, 255, 0.1);
-    border: solid 3px var(--primary-color);
-    margin: 2px;
-}
-.info > p{
-    font-size: 3vw;
-}
-.info > ul{
-    font-size: 3vw;
-    margin: 0.5rem;
-}
-
-.bottominfo{
-    border-radius: 15px;
-    font-family: var(--roboto);
-    padding: 20px; 
-    float:left;
-    width:100%;
-    background: rgba(255, 255, 255, 0.1);
-    border: solid 3px var(--primary-color);
-    font-size: 2rem;
-}
-
-.profile{
+.profile {
     height: 20%;
     width: 20%;
     border-radius: 50%;
@@ -51,60 +44,88 @@ h1{
     margin-left: auto;
     margin-right: auto;
     border: solid 3px var(--primary-color);
-  }
+}
 
-.top{
+.top {
     text-align: center;
     font-size: 7vw;
 }
-h4{
-    color:var(--primary-color);
-    font-size: 4vw;
+
+.format {
+    display: flow;
 }
 
-h5{
-    color:var(--primary-color);
+.info {
+    position: relative;
+    float: left;
+    width: 100%;
+    border-radius: 15px;
+    font-family: var(--roboto);
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.1);
+    border: solid 3px var(--primary-color);
+    margin: 2px;
+}
+
+.info > p {
     font-size: 3vw;
 }
 
-.links{
+.info > ul {
+    font-size: 3vw;
+    margin: 0.5rem;
+}
+
+.bottominfo {
+    border-radius: 15px;
+    font-family: var(--roboto);
+    padding: 20px;
+    float: left;
+    width: 100%;
+    background: rgba(255, 255, 255, 0.1);
+    border: solid 3px var(--primary-color);
+    font-size: 2rem;
+}
+
+.links {
     width: 10%;
     height: 10%;
 }
 
-#Email:hover{
+#Email:hover {
     background: rgb(255, 255, 255, 0.2);
 }
 
-.piechart{
+.piechart {
     width: 35vw;
     height: 35vw;
     min-width: 150px;
     min-height: 150px;
     max-height: 200px;
     max-width: 200px;
-
-    /*width: 150px;
-    height: 150px;*/
     display: flex;
     border-radius: 100%;
 }
+
 .piechart.pie-1 {
     background-image: conic-gradient(
             pink 180deg,
-            pink 0 );
+            pink 0);
 }
+
 .piechart.pie-2 {
     background-image: conic-gradient(
             pink 180deg,
-            lightblue 0 );
+            lightblue 0);
 }
+
 .piechart.pie-3 {
     background-image: conic-gradient(
             pink 120deg,
             lightsalmon 0 240deg,
             lightblue 0);
 }
+
 .piechart.pie-4 {
     background-image: conic-gradient(
             pink 90deg,
@@ -112,6 +133,7 @@ h5{
             lightgreen 0 270deg,
             lightblue 0);
 }
+
 .piechart.pie-5 {
     background-image: conic-gradient(
             pink 72deg,
@@ -120,142 +142,8 @@ h5{
             lightcoral 0 288deg,
             lightblue 0);
 }
-/*------------------------------------------------------*/
-/*
-.pie-1.segment1{
-    position: absolute;
-    top: 85px;
-    left: 77px;
-    text-shadow: 1px 1px 1px black;
-    font-size: 1rem;
-}
-.pie-2.segment1{
-    position: absolute;
-    top: 87px;
-    left: 40px;
-    text-shadow: 1px 1px 1px black;
-    font-size: 0.9rem;
-}
-.pie-2.segment2{
-    position: absolute;
-    top: 87px;
-    left: 100px;
-    text-shadow: 1px 1px 1px black;
-    font-size: 0.9rem;
-}
-.pie-3.segment1{
-    position: absolute;
-    top: 8vw;
-    left: 16vw;
-    text-shadow: 1px 1px 1px black;
-    font-size: 0.9rem;
-}
-.pie-3.segment2{
-    position: absolute;
-    top: 115px;
-    left: 70px;
-    text-shadow: 1px 1px 1px black;
-    font-size: 0.9rem;
-}
-.pie-3.segment3{
-    position: absolute;
-    top: 71px;
-    left: 30px;
-    text-shadow: 1px 1px 1px black;
-    font-size: 0.9rem;
-}
 
-.pie-4.segment1{
-    position: absolute;
-    top: 75px;
-    left: 45px;
-    text-shadow: 1px 1px 1px black;
-    font-size: 0.8rem;
-}
-
-.pie-4.segment2{
-    position: absolute;
-    top: 75px;
-    left: 100px;
-    text-shadow: 1px 1px 1px black;
-    font-size: 0.8rem;
-}
-
-.pie-4.segment3{
-    position: absolute;
-    top: 100px;
-    left: 40px;
-    text-shadow: 1px 1px 1px black;
-    font-size: 0.8rem;
-}
-
-.pie-4.segment4{
-    position: absolute;
-    top: 100px;
-    left: 100px;
-    text-shadow: 1px 1px 1px black;
-    font-size: 0.8rem;
-}
-
-.pie-5.segment1{
-    position: absolute;
-    top: 60px;
-    left: 100px;
-    text-shadow: 1px 1px 1px black;
-    font-size: 0.75rem;
-}
-.pie-5.segment2{
-    position: absolute;
-    top: 95px;
-    left: 110px;
-    text-shadow: 1px 1px 1px black;
-    font-size: 0.75rem;
-}
-.pie-5.segment3{
-    position: absolute;
-    top: 130px;
-    left: 70px;
-    text-shadow: 1px 1px 1px black;
-    font-size: 0.75rem;
-}
-.pie-5.segment4{
-    position: absolute;
-    top: 95px;
-    left: 35px;
-    text-shadow: 1px 1px 1px black;
-    font-size: 0.75rem;
-}
-.pie-5.segment5{
-    position: absolute;
-    top: 60px;
-    left: 45px;
-    text-shadow: 1px 1px 1px black;
-    font-size: 0.75rem;
-}
-
-.legende{
-    float: right;
-    vertical-align: middle;
-    position: absolute;
-    bottom: 5px;
-    right: 10px;
-    width: 35%;
-    height: 95%;
-    border-radius: 15px;
-    font-family: var(--roboto);
-    padding: 20px;
-    background: rgba(255, 255, 255, 0.1);
-    border: solid 3px var(--primary-color);
-    overflow-wrap: break-word;
-}
-*/
-footer {
-    height: 5vh;
-    width: 100%;
-    float: right;
-}
-
-.legenda{
+.legenda {
     margin-left: 20px;
     vertical-align: middle;
     background: rgba(255, 255, 255, 0.1);
@@ -272,69 +160,71 @@ footer {
     overflow-wrap: anywhere;
 }
 
-.entry1{
+.entry1 {
     display: flex;
     flex-flow: column;
     height: 100%;
 }
-.entry2{
+
+.entry2 {
     display: flex;
     flex-flow: column;
     height: 50%;
 }
-.entry3{
+
+.entry3 {
     display: flex;
     flex-flow: column;
     height: 33.33%;
 }
-.entry4{
+
+.entry4 {
     display: flex;
     flex-flow: column;
     height: 25%;
 }
-.entry5{
+
+.entry5 {
     display: flex;
     flex-flow: column;
     height: 20%;
 }
+
 .entry-color-text {
     min-height: 2vw;
     min-width: 2vw;
-    font-size: 3vw;
+    font-size: 2.75vw;
     flex: 1 1 auto;
     text-align: center;
     display: table;
 }
-span{
-    display: table-cell;
-    vertical-align: middle;
-}
-/*.entry-text {
-    margin-left: 5px;
-    margin-top: 5px;
-    margin-bottom: 5px;
-}*/
+
 
 #color-top {
     border-top-left-radius: 15px;
     border-top-right-radius: 15px;
     background-color: pink;
 }
+
 #color-bottom {
     border-bottom-left-radius: 15px;
     border-bottom-right-radius: 15px;
     background-color: lightblue;
 }
+
 #color1 {
     background-color: lightsalmon;
 }
+
 #color2 {
     background-color: lightgreen;
 }
+
 #color3 {
     background-color: lightcoral;
 }
-#colortop-bottom{
+
+#colortop-bottom {
     border-top-left-radius: 15px;
     border-top-right-radius: 15px;
     border-bottom-left-radius: 15px;
@@ -344,55 +234,60 @@ span{
 
 /* Tablets */
 @media (min-width: 769px) {
-    .c1 {
-        width: 50%;
-    }
-    h1{
+    h1 {
         font-size: 3rem;
     }
-    .info{
-        width: 50%; /* The width is 100%, when the viewport is 1000px or smaller */
-    }
-    .bottominfo{
+
+    .bottominfo {
         width: 100%;
     }
-    .test{
+
+    .format {
         display: flex;
     }
-    .info > h4, .bottominfo > h4{
-        color:var(--primary-color);
+
+    .info {
+        width: 50%;
+    }
+
+    .info > h4, .bottominfo > h4 {
+        color: var(--primary-color);
         font-size: 3vw;
     }
 
-    .info > h5{
-        color:var(--primary-color);
+    .info > h5 {
+        color: var(--primary-color);
         font-size: 2vw;
     }
-    .info > p{
+
+    .info > p {
         font-size: 1.75vw;
     }
-    .info > ul{
+
+    .info > ul {
         font-size: 2vw;
         margin: 0.5rem;
     }
-    .piechart{
+
+    .piechart {
         width: 25vw;
         height: 25vw;
         min-width: 200px;
         min-height: 200px;
         max-height: 250px;
         max-width: 250px;
-        /*width: 30vh;
-        height: 30vh;*/
     }
-    .profile{
+
+    .profile {
         height: 15%;
         width: 15%;
     }
+
     .entry-color-text {
         font-size: 1.75vw;
     }
 }
+
 @media (min-width: 992px) {
     .outer-border {
         width: 70%;
@@ -400,7 +295,7 @@ span{
         padding: 10px;
     }
 
-    .test {
+    .format {
         display: flex;
     }
 
@@ -434,9 +329,8 @@ span{
         min-height: 150px;
         max-height: 450px;
         max-width: 450px;
-        /*width: 30vh;
-        height: 30vh;*/
     }
+
     .entry-color-text {
         font-size: 1.3vw;
     }
