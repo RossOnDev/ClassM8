@@ -130,7 +130,7 @@ footer {
 .piechart.pie-3 {
     background-image: conic-gradient(
             rgb(0 100 0) 120deg,
-            rgb(134 218 118) 0 240deg,
+            rgb(102 205 0) 0 240deg,
             var(--primary-color) 0);
 }
 
