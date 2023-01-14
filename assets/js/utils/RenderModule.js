@@ -24,8 +24,8 @@ export default class RenderModule {
         let cardsHTML = "";
         users.forEach(user => {
             const fullName = user.firstName + " " + user.lastName;
-            const profileUrl = "./profiles/" + this.convertUmlauts(user.firstName.toLowerCase())
-                + "_" + this.convertUmlauts(user.lastName.toLowerCase()) + ".html";
+            const profileUrl = "./profiles/" + this.convertUmlauts(user.firstName.toLowerCase().replaceAll(" ", "_"))
+                + "_" + this.convertUmlauts(user.lastName.toLowerCase().replaceAll(" ", "_")) + ".html";
 
             cardsHTML +=
                 "   <section class=\"card\" onclick=\"window.location = '" + profileUrl + "'\">" +
