@@ -1,87 +1,87 @@
 @import "general.css";
 
-.content {
+.container {
+    margin: auto;
+    width: 70%;
     min-height: calc(100vh - 10vh - 5vh - 1.5rem); /* 100% - Height of Nav - Height of Footer - Footer Padding */
 }
 
-.middle > h1{
-    text-align: center;
-    font-size: 2rem;
-    display: block;
-}
-h4{
-    text-align: center;
-    font-size: 1rem
-}
-p{
-    text-align: center;
-
-}
-.left{
-    position: relative;
-    float:left;
-    width: 20%;
-    margin-left: 5%;
-    overflow-wrap: anywhere;
+.header
+{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin: 4rem 0 2rem;
 }
 
-.middle{
-    position: relative;
-    float:left;
-    width: 50%;
-}
-.right{
-    position: relative;
-    float:left;
-    width: 20%;
-    margin-right: 5%;
-    overflow-wrap: anywhere;
-
-}
-.profile{
-    height: 90%;
-    width: 90%;
-    border-radius: 50%;
-    margin-left: 5%;
-    border: solid 3px var(--primary-color);
+.header p {
+    margin: 2rem 0;
+    font-size: 17px;
+    line-height: 1.6rem;
 }
 
-.Email{
+.header p strong {
+    font-size: 21px;
+}
+
+.header p a {
+    text-decoration: underline;
     color: white;
-    text-align: center;
-    display: block;
-    font-weight: bold;
 }
 
-.Email:hover{
-    color: var(--primary-color);
+.header p a:hover {
+    text-decoration: underline;
+    color: var(--primary-color)
 }
+
+.content {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+.card {
+    background: rgba(255, 255, 255, 0.04);
+    height: fit-content;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    align-items: flex-start;
+}
+
+.card img {
+    width: 70vw;
+}
+
+.card h2 {
+    font-size: 25px;
+}
+
+.card .card-desc {
+    margin: 1rem 0;
+}
+
 
 /* Tablets */
 @media (min-width: 768px) {
-    .middle > h1{
-        font-size: 3rem;
-        text-align: center;
-    }
-    h4{
-        font-size: 1.75rem;
-    }
-    p{
-        font-size: 1.4rem;
+    .content {
+        justify-content: center;
+        flex-wrap: nowrap;
     }
 
+    .card img {
+        width: 30vw;
+    }
 }
 
 /* Desktops */
 @media (min-width: 992px) {
-    .middle > h1{
-        font-size: 4rem;
-        text-align: center;
+    .content {
+        justify-content: flex-start;
     }
-    h4{
-        font-size: 2rem;
-    }
-    p{
-        font-size: 1.5rem;
+
+    .card img {
+        width: 15vw;
     }
 }

@@ -108,6 +108,10 @@ nav li a {
     animation: .2s;
 }
 
+nav li .selected {
+    color: var(--primary-color)
+}
+
 nav li a:hover {
     color: var(--primary-color)
 }
@@ -121,6 +125,7 @@ nav li a:hover {
 }
 
 .footer-content > h6 {
+    text-align: center;
     text-transform: uppercase;
     font-family: var(--roboto);
     font-size: 0.8rem;
