@@ -104,7 +104,14 @@ export default class DataGenerator {
                 [],
                 "marion.hoelzl@edu.fh-joanneum.at",
                 "assets/img/avatars/marion.jpg"
-            )
+            ),
+            new User(
+                "Nicole",
+                "Schrottner",
+                [],
+                "nicole.schrottner@edu.fh-joanneum.at",
+                "assets/img/avatars/nicole.jpg"
+            ),
         );
         return users;
     }
