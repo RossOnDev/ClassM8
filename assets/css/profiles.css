@@ -1,5 +1,6 @@
 @import "general.css";
 
+/* Select all elements */
 * {
     box-sizing: border-box; /* So Padding and Border are included in the  height and width values */
 }
@@ -36,6 +37,7 @@ footer {
     height: auto;
 }
 
+/* Formatting of the profile picture at the top */
 .profile {
     height: 20%;
     width: 20%;
@@ -55,6 +57,7 @@ footer {
     display: flow;
 }
 
+/* Formatting of the two info sections in the center */
 .info {
     position: relative;
     float: left;
@@ -76,6 +79,7 @@ footer {
     margin: 0.5rem;
 }
 
+/* Formatting of the info section at the bottom with the links */
 .bottominfo {
     border-radius: 15px;
     font-family: var(--roboto);
@@ -87,15 +91,18 @@ footer {
     font-size: 2rem;
 }
 
+/* Size of the Icons at the bottominfo section */
 .links {
     width: 10%;
     height: 10%;
 }
 
+/* Making the background change from the Email-Icon if hovered */
 #Email:hover {
-    background: rgb(255, 255, 255, 0.2);
+    background: rgba(255, 255, 255, 0.2);
 }
 
+/* Making a circle for the piechart */
 .piechart {
     width: 35vw;
     height: 35vw;
@@ -107,59 +114,58 @@ footer {
     border-radius: 100%;
 }
 
+/* Coloring the circle but without color transition */
 .piechart.pie-1 {
     background-image: conic-gradient(
-            pink 180deg,
-            pink 0);
+            rgb(0 100 0) 180deg,
+            rgb(0 100 0) 0);
 }
 
 .piechart.pie-2 {
     background-image: conic-gradient(
-            pink 180deg,
-            lightblue 0);
+            rgb(0 100 0) 180deg,
+            var(--primary-color) 0);
 }
 
 .piechart.pie-3 {
     background-image: conic-gradient(
-            pink 120deg,
-            lightsalmon 0 240deg,
-            lightblue 0);
+            rgb(0 100 0) 120deg,
+            rgb(134 218 118) 0 240deg,
+            var(--primary-color) 0);
 }
 
 .piechart.pie-4 {
     background-image: conic-gradient(
-            pink 90deg,
-            lightsalmon 0 180deg,
-            lightgreen 0 270deg,
-            lightblue 0);
+            rgb(0 100 0) 90deg,
+            rgb(102 205 0) 0 180deg,
+            rgb(46 139 87) 0 270deg,
+            var(--primary-color) 0);
 }
 
 .piechart.pie-5 {
     background-image: conic-gradient(
-            pink 72deg,
-            lightsalmon 0 144deg,
-            lightgreen 0 216deg,
-            lightcoral 0 288deg,
-            lightblue 0);
+            rgb(0 100 0) 72deg,
+            rgb(102 205 0) 0 144deg,
+            rgb(46 139 87) 0 216deg,
+            rgb(134 218 118) 0 288deg,
+            var(--primary-color) 0);
 }
 
 .legenda {
-    margin-left: 20px;
-    vertical-align: middle;
     background: rgba(255, 255, 255, 0.1);
     padding: 5px;
-    float: right;
     height: 95%;
     width: 35%;
-    bottom: 5px;
+    bottom: 6px;
     right: 10px;
     position: absolute;
     border-radius: 15px;
     font-family: var(--roboto);
     border: solid 3px var(--primary-color);
-    overflow-wrap: anywhere;
+    overflow-wrap: anywhere; /* No overflowing of the text inside the legend */
 }
 
+/* Defining how much height every entry has in the sidebar */
 .entry1 {
     display: flex;
     flex-flow: column;
@@ -190,6 +196,7 @@ footer {
     height: 20%;
 }
 
+/* Defining the size of the text and backgroudncolor */
 .entry-color-text {
     min-height: 2vw;
     min-width: 2vw;
@@ -199,29 +206,30 @@ footer {
     display: table;
 }
 
-
+/* Defining the color and form of the entry */
 #color-top {
     border-top-left-radius: 15px;
     border-top-right-radius: 15px;
-    background-color: pink;
+    background-color: rgb(0 100 0);
 }
 
 #color-bottom {
     border-bottom-left-radius: 15px;
     border-bottom-right-radius: 15px;
-    background-color: lightblue;
+    background-color: var(--primary-color);
 }
 
 #color1 {
-    background-color: lightsalmon;
+    background-color: rgb(102 205 0);
 }
 
 #color2 {
-    background-color: lightgreen;
+
+    background-color: rgb(46 139 87);
 }
 
 #color3 {
-    background-color: lightcoral;
+    background-color: rgb(134 218 118);
 }
 
 #colortop-bottom {
@@ -229,7 +237,7 @@ footer {
     border-top-right-radius: 15px;
     border-bottom-left-radius: 15px;
     border-bottom-right-radius: 15px;
-    background-color: pink;
+    background-color: rgb(0 100 0);
 }
 
 /* Tablets */
@@ -288,6 +296,7 @@ footer {
     }
 }
 
+/* Desktops */
 @media (min-width: 992px) {
     .outer-border {
         width: 70%;
